@@ -1,0 +1,3 @@
+service vendor.widevine-beanpod /vendor/bin/hw/vendor.microtrust.hardware.widevine@1.0-service.beanpod
+    class hal
+    user nobody
