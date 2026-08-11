@@ -24795,6 +24795,22 @@ cc_prebuilt_library_shared {
     system_ext_specific: true,
 }
 
+prebuilt_apex {
+    name: "com.google.android.widevine.nonupdatable",
+    owner: "bluefox",
+    src: "proprietary/vendor/apex/com.google.android.widevine.nonupdatable.apex",
+    filename: "com.google.android.widevine.nonupdatable.apex",
+    soc_specific: true,
+}
+
+prebuilt_apex {
+    name: "com.mediatek.oemcrypto",
+    owner: "bluefox",
+    src: "proprietary/vendor/apex/com.mediatek.oemcrypto.apex",
+    filename: "com.mediatek.oemcrypto.apex",
+    soc_specific: true,
+}
+
 android_app_import {
     name: "ImsService",
     owner: "bluefox",

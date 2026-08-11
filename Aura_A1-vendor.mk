@@ -1453,6 +1453,8 @@ PRODUCT_PACKAGES += \
     libvt_avsync \
     vendor.mediatek.hardware.videotelephony-V1-ndk \
     vendor.mediatek.hardware.videotelephony@1.0 \
+    com.google.android.widevine.nonupdatable \
+    com.mediatek.oemcrypto \
     ImsService \
     MtkGbaService \
     MtkTelephonyAssist \
