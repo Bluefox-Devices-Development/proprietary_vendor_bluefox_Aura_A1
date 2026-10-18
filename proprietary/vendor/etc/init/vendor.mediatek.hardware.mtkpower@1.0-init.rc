@@ -437,6 +437,8 @@ on post-fs-data
     chmod 0664 /sys/kernel/ged/hal/lowpwr_mode
     chown system system /sys/kernel/ged/hal/ged_npu_hint
     chmod 0664 /sys/kernel/ged/hal/ged_npu_hint
+    chown system system /sys/kernel/ged/hal/memsys/gpu_axi_mon_ostd_policy
+    chmod 0664 /sys/kernel/ged/hal/memsys/gpu_axi_mon_ostd_policy
 # PPM
     chown system system /proc/ppm/policy_status
     chmod 0664 /proc/ppm/policy_status

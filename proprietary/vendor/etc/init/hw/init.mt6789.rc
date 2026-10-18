@@ -213,6 +213,9 @@ on post-fs-data
 	chmod 0666 proc/android_touch/GESTURE
     chown system system proc/android_touch/SMWP
 	chown system system proc/android_touch/SMWP
+	
+	chmod 0777 /sys/devices/platform/charger/hct_discharging
+    chown system radio  /sys/devices/platform/charger/hct_discharging
 
     # create basic filesystem structure
     # We chown/chmod /mnt/vendor/nvdata again so because mount is run as root + defaults

@@ -1,7 +1,9 @@
 AP_CFG_CUSTOM_BEGIN_LID                                               51
+AP_CFG_CUSTOM_FILE_CUSTOM_FMT_1_LID                                   80
+AP_CFG_CUSTOM_FILE_CUSTOM_FMT_LID                                     79
 AP_CFG_CUSTOM_FILE_FUEL_GAUGE_LID                                     76
 AP_CFG_CUSTOM_FILE_GPS_LID                                            52
-AP_CFG_CUSTOM_FILE_MAX_LID                                            78
+AP_CFG_CUSTOM_FILE_MAX_LID                                            81
 AP_CFG_CUSTOM_FILE_SMARTPA_CALIB_LID                                  77
 AP_CFG_FILE_EXT_MDTYPE_LID                                            20
 AP_CFG_FILE_MDTYPE_LID                                                19
@@ -77,6 +79,7 @@ AP_CFG_RDEB_FILE_BT_ADDR_LID                                          1
 AP_CFG_RDEB_FILE_WIFI_LID                                             55
 AP_CFG_RDEB_OMADM_USB_LID                                             14
 AP_CFG_RDEB_WIFI_CUSTOM_LID                                           56
+AP_CFG_REEB_ACTIVATION_LID                                            78
 AP_CFG_REEB_PRODUCT_INFO_LID                                          61
 AUDIO_GAIN_ALARM                                                      4
 AUDIO_GAIN_BLUETOOTH_SCO                                              6

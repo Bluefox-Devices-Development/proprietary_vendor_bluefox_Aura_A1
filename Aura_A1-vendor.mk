@@ -31,8 +31,8 @@ PRODUCT_COPY_FILES += \
     vendor/bluefox/Aura_A1/proprietary/vendor/etc/aidl/le_audio/aidl_default_audio_set_configurations.json_displaytwo:$(TARGET_COPY_OUT_VENDOR)/etc/aidl/le_audio/aidl_default_audio_set_configurations.json_displaytwo \
     vendor/bluefox/Aura_A1/proprietary/vendor/etc/aidl/le_audio/aidl_default_audio_set_configurations.json_mtk:$(TARGET_COPY_OUT_VENDOR)/etc/aidl/le_audio/aidl_default_audio_set_configurations.json_mtk \
     vendor/bluefox/Aura_A1/proprietary/vendor/etc/aidl/le_audio/aidl_default_audio_set_scenarios.aura:$(TARGET_COPY_OUT_VENDOR)/etc/aidl/le_audio/aidl_default_audio_set_scenarios.aura \
-    vendor/bluefox/Aura_A1/proprietary/vendor/etc/apdb/APDB_MT6789___W2619:$(TARGET_COPY_OUT_VENDOR)/etc/apdb/APDB_MT6789___W2619 \
-    vendor/bluefox/Aura_A1/proprietary/vendor/etc/apdb/APDB_MT6789___W2619_ENUM:$(TARGET_COPY_OUT_VENDOR)/etc/apdb/APDB_MT6789___W2619_ENUM \
+    vendor/bluefox/Aura_A1/proprietary/vendor/etc/apdb/APDB_MT6789___W2629:$(TARGET_COPY_OUT_VENDOR)/etc/apdb/APDB_MT6789___W2629 \
+    vendor/bluefox/Aura_A1/proprietary/vendor/etc/apdb/APDB_MT6789___W2629_ENUM:$(TARGET_COPY_OUT_VENDOR)/etc/apdb/APDB_MT6789___W2629_ENUM \
     vendor/bluefox/Aura_A1/proprietary/vendor/etc/audio_device.xml:$(TARGET_COPY_OUT_VENDOR)/etc/audio_device.xml \
     vendor/bluefox/Aura_A1/proprietary/vendor/etc/audio_effects.xml:$(TARGET_COPY_OUT_VENDOR)/etc/audio_effects.xml \
     vendor/bluefox/Aura_A1/proprietary/vendor/etc/audio_effects_config.xml:$(TARGET_COPY_OUT_VENDOR)/etc/audio_effects_config.xml \
@@ -206,24 +206,6 @@ PRODUCT_COPY_FILES += \
     vendor/bluefox/Aura_A1/proprietary/vendor/etc/gralloc/dpu_aeu.xml:$(TARGET_COPY_OUT_VENDOR)/etc/gralloc/dpu_aeu.xml \
     vendor/bluefox/Aura_A1/proprietary/vendor/etc/gralloc/gpu.xml:$(TARGET_COPY_OUT_VENDOR)/etc/gralloc/gpu.xml \
     vendor/bluefox/Aura_A1/proprietary/vendor/etc/gralloc/vpu.xml:$(TARGET_COPY_OUT_VENDOR)/etc/gralloc/vpu.xml \
-    vendor/bluefox/Aura_A1/proprietary/vendor/etc/hdr_config.yaml:$(TARGET_COPY_OUT_VENDOR)/etc/hdr_config.yaml \
-    vendor/bluefox/Aura_A1/proprietary/vendor/etc/hdr_isocfg.xml:$(TARGET_COPY_OUT_VENDOR)/etc/hdr_isocfg.xml \
-    vendor/bluefox/Aura_A1/proprietary/vendor/etc/hyn_portrait.data1:$(TARGET_COPY_OUT_VENDOR)/etc/hyn_portrait.data1 \
-    vendor/bluefox/Aura_A1/proprietary/vendor/etc/hyn_portrait.data2:$(TARGET_COPY_OUT_VENDOR)/etc/hyn_portrait.data2 \
-    vendor/bluefox/Aura_A1/proprietary/vendor/etc/hyn_portrait.data3:$(TARGET_COPY_OUT_VENDOR)/etc/hyn_portrait.data3 \
-    vendor/bluefox/Aura_A1/proprietary/vendor/etc/hyn_portrait.data4:$(TARGET_COPY_OUT_VENDOR)/etc/hyn_portrait.data4 \
-    vendor/bluefox/Aura_A1/proprietary/vendor/etc/hyn_portrait.data5:$(TARGET_COPY_OUT_VENDOR)/etc/hyn_portrait.data5 \
-    vendor/bluefox/Aura_A1/proprietary/vendor/etc/hyn_portrait.data6:$(TARGET_COPY_OUT_VENDOR)/etc/hyn_portrait.data6 \
-    vendor/bluefox/Aura_A1/proprietary/vendor/etc/hyn_portrait.data7:$(TARGET_COPY_OUT_VENDOR)/etc/hyn_portrait.data7 \
-    vendor/bluefox/Aura_A1/proprietary/vendor/etc/hyn_portrait.data8:$(TARGET_COPY_OUT_VENDOR)/etc/hyn_portrait.data8 \
-    vendor/bluefox/Aura_A1/proprietary/vendor/etc/hyn_portrait.part1:$(TARGET_COPY_OUT_VENDOR)/etc/hyn_portrait.part1 \
-    vendor/bluefox/Aura_A1/proprietary/vendor/etc/hyn_portrait.part2:$(TARGET_COPY_OUT_VENDOR)/etc/hyn_portrait.part2 \
-    vendor/bluefox/Aura_A1/proprietary/vendor/etc/hyn_portrait.part3:$(TARGET_COPY_OUT_VENDOR)/etc/hyn_portrait.part3 \
-    vendor/bluefox/Aura_A1/proprietary/vendor/etc/hyn_portrait.part4:$(TARGET_COPY_OUT_VENDOR)/etc/hyn_portrait.part4 \
-    vendor/bluefox/Aura_A1/proprietary/vendor/etc/hyn_portrait.part5:$(TARGET_COPY_OUT_VENDOR)/etc/hyn_portrait.part5 \
-    vendor/bluefox/Aura_A1/proprietary/vendor/etc/hyn_portrait.part6:$(TARGET_COPY_OUT_VENDOR)/etc/hyn_portrait.part6 \
-    vendor/bluefox/Aura_A1/proprietary/vendor/etc/hyn_portrait.part7:$(TARGET_COPY_OUT_VENDOR)/etc/hyn_portrait.part7 \
-    vendor/bluefox/Aura_A1/proprietary/vendor/etc/hyn_portrait.part8:$(TARGET_COPY_OUT_VENDOR)/etc/hyn_portrait.part8 \
     vendor/bluefox/Aura_A1/proprietary/vendor/etc/init.insmod.mt6789.cfg:$(TARGET_COPY_OUT_VENDOR)/etc/init.insmod.mt6789.cfg \
     vendor/bluefox/Aura_A1/proprietary/vendor/etc/init.insmod.touch.cfg:$(TARGET_COPY_OUT_VENDOR)/etc/init.insmod.touch.cfg \
     vendor/bluefox/Aura_A1/proprietary/vendor/etc/init/android.hardware.audio.service-aidl.mediatek.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/android.hardware.audio.service-aidl.mediatek.rc \
@@ -359,28 +341,18 @@ PRODUCT_COPY_FILES += \
     vendor/bluefox/Aura_A1/proprietary/vendor/etc/media_codecs_c2.xml:$(TARGET_COPY_OUT_VENDOR)/etc/media_codecs_c2.xml \
     vendor/bluefox/Aura_A1/proprietary/vendor/etc/media_codecs_performance.xml:$(TARGET_COPY_OUT_VENDOR)/etc/media_codecs_performance.xml \
     vendor/bluefox/Aura_A1/proprietary/vendor/etc/media_profiles_V1_0.xml:$(TARGET_COPY_OUT_VENDOR)/etc/media_profiles_V1_0.xml \
-    vendor/bluefox/Aura_A1/proprietary/vendor/etc/mfnr_config.yaml:$(TARGET_COPY_OUT_VENDOR)/etc/mfnr_config.yaml \
-    vendor/bluefox/Aura_A1/proprietary/vendor/etc/mfnr_isocfg.xml:$(TARGET_COPY_OUT_VENDOR)/etc/mfnr_isocfg.xml \
     vendor/bluefox/Aura_A1/proprietary/vendor/etc/mpe.conf:$(TARGET_COPY_OUT_VENDOR)/etc/mpe.conf \
     vendor/bluefox/Aura_A1/proprietary/vendor/etc/mtk_platform_codecs_config.xml:$(TARGET_COPY_OUT_VENDOR)/etc/mtk_platform_codecs_config.xml \
     vendor/bluefox/Aura_A1/proprietary/vendor/etc/mtk_vext_info:$(TARGET_COPY_OUT_VENDOR)/etc/mtk_vext_info \
-    vendor/bluefox/Aura_A1/proprietary/vendor/etc/night_config.yaml:$(TARGET_COPY_OUT_VENDOR)/etc/night_config.yaml \
-    vendor/bluefox/Aura_A1/proprietary/vendor/etc/night_isocfg.xml:$(TARGET_COPY_OUT_VENDOR)/etc/night_isocfg.xml \
-    vendor/bluefox/Aura_A1/proprietary/vendor/etc/pano_cfg.yaml:$(TARGET_COPY_OUT_VENDOR)/etc/pano_cfg.yaml \
     vendor/bluefox/Aura_A1/proprietary/vendor/etc/partition_permission.sh:$(TARGET_COPY_OUT_VENDOR)/etc/partition_permission.sh \
     vendor/bluefox/Aura_A1/proprietary/vendor/etc/permissions/com.mediatek.hardware.vow.xml:$(TARGET_COPY_OUT_VENDOR)/etc/permissions/com.mediatek.hardware.vow.xml \
     vendor/bluefox/Aura_A1/proprietary/vendor/etc/permissions/com.mediatek.hardware.vow_dsp.xml:$(TARGET_COPY_OUT_VENDOR)/etc/permissions/com.mediatek.hardware.vow_dsp.xml \
-    vendor/bluefox/Aura_A1/proprietary/vendor/etc/portrait_config.yaml:$(TARGET_COPY_OUT_VENDOR)/etc/portrait_config.yaml \
     vendor/bluefox/Aura_A1/proprietary/vendor/etc/power_app_cfg.xml:$(TARGET_COPY_OUT_VENDOR)/etc/power_app_cfg.xml \
     vendor/bluefox/Aura_A1/proprietary/vendor/etc/powercontable.xml:$(TARGET_COPY_OUT_VENDOR)/etc/powercontable.xml \
     vendor/bluefox/Aura_A1/proprietary/vendor/etc/powerscntbl.xml:$(TARGET_COPY_OUT_VENDOR)/etc/powerscntbl.xml \
     vendor/bluefox/Aura_A1/proprietary/vendor/etc/pq_flag.xml:$(TARGET_COPY_OUT_VENDOR)/etc/pq_flag.xml \
-    vendor/bluefox/Aura_A1/proprietary/vendor/etc/product.yaml:$(TARGET_COPY_OUT_VENDOR)/etc/product.yaml \
     vendor/bluefox/Aura_A1/proprietary/vendor/etc/public.libraries.txt:$(TARGET_COPY_OUT_VENDOR)/etc/public.libraries.txt \
     vendor/bluefox/Aura_A1/proprietary/vendor/etc/r_submix_audio_policy_configuration.xml:$(TARGET_COPY_OUT_VENDOR)/etc/r_submix_audio_policy_configuration.xml \
-    vendor/bluefox/Aura_A1/proprietary/vendor/etc/scene_cfg.yaml:$(TARGET_COPY_OUT_VENDOR)/etc/scene_cfg.yaml \
-    vendor/bluefox/Aura_A1/proprietary/vendor/etc/scene_heavy.cfg:$(TARGET_COPY_OUT_VENDOR)/etc/scene_heavy.cfg \
-    vendor/bluefox/Aura_A1/proprietary/vendor/etc/scene_light.cfg:$(TARGET_COPY_OUT_VENDOR)/etc/scene_light.cfg \
     vendor/bluefox/Aura_A1/proprietary/vendor/etc/seccomp_policy/android.hardware.media.c2@1.2-extended-seccomp-policy:$(TARGET_COPY_OUT_VENDOR)/etc/seccomp_policy/android.hardware.media.c2@1.2-extended-seccomp-policy \
     vendor/bluefox/Aura_A1/proprietary/vendor/etc/seccomp_policy/android.hardware.media.c2@1.2-mediatek-seccomp-policy:$(TARGET_COPY_OUT_VENDOR)/etc/seccomp_policy/android.hardware.media.c2@1.2-mediatek-seccomp-policy \
     vendor/bluefox/Aura_A1/proprietary/vendor/etc/seccomp_policy/mediacodec.policy:$(TARGET_COPY_OUT_VENDOR)/etc/seccomp_policy/mediacodec.policy \
@@ -566,16 +538,6 @@ PRODUCT_COPY_FILES += \
     vendor/bluefox/Aura_A1/proprietary/vendor/etc/usb_audio_accessory_only_policy_configuration.xml:$(TARGET_COPY_OUT_VENDOR)/etc/usb_audio_accessory_only_policy_configuration.xml \
     vendor/bluefox/Aura_A1/proprietary/vendor/etc/usb_audio_policy_configuration.xml:$(TARGET_COPY_OUT_VENDOR)/etc/usb_audio_policy_configuration.xml \
     vendor/bluefox/Aura_A1/proprietary/vendor/etc/vendor-apns-conf.xml:$(TARGET_COPY_OUT_VENDOR)/etc/vendor-apns-conf.xml \
-    vendor/bluefox/Aura_A1/proprietary/vendor/etc/vfb_cfg.yaml:$(TARGET_COPY_OUT_VENDOR)/etc/vfb_cfg.yaml \
-    vendor/bluefox/Aura_A1/proprietary/vendor/etc/vfb_data.part1:$(TARGET_COPY_OUT_VENDOR)/etc/vfb_data.part1 \
-    vendor/bluefox/Aura_A1/proprietary/vendor/etc/vfb_data.part2:$(TARGET_COPY_OUT_VENDOR)/etc/vfb_data.part2 \
-    vendor/bluefox/Aura_A1/proprietary/vendor/etc/vfb_data.part3:$(TARGET_COPY_OUT_VENDOR)/etc/vfb_data.part3 \
-    vendor/bluefox/Aura_A1/proprietary/vendor/etc/vfb_data.part4:$(TARGET_COPY_OUT_VENDOR)/etc/vfb_data.part4 \
-    vendor/bluefox/Aura_A1/proprietary/vendor/etc/vfb_data.part5:$(TARGET_COPY_OUT_VENDOR)/etc/vfb_data.part5 \
-    vendor/bluefox/Aura_A1/proprietary/vendor/etc/vfb_data.part6:$(TARGET_COPY_OUT_VENDOR)/etc/vfb_data.part6 \
-    vendor/bluefox/Aura_A1/proprietary/vendor/etc/vfb_data.part7:$(TARGET_COPY_OUT_VENDOR)/etc/vfb_data.part7 \
-    vendor/bluefox/Aura_A1/proprietary/vendor/etc/vfb_data.part8:$(TARGET_COPY_OUT_VENDOR)/etc/vfb_data.part8 \
-    vendor/bluefox/Aura_A1/proprietary/vendor/etc/vfb_data.xml:$(TARGET_COPY_OUT_VENDOR)/etc/vfb_data.xml \
     vendor/bluefox/Aura_A1/proprietary/vendor/etc/virtual-spn-conf-by-efgid1.xml:$(TARGET_COPY_OUT_VENDOR)/etc/virtual-spn-conf-by-efgid1.xml \
     vendor/bluefox/Aura_A1/proprietary/vendor/etc/virtual-spn-conf-by-efpnn.xml:$(TARGET_COPY_OUT_VENDOR)/etc/virtual-spn-conf-by-efpnn.xml \
     vendor/bluefox/Aura_A1/proprietary/vendor/etc/virtual-spn-conf-by-efspn.xml:$(TARGET_COPY_OUT_VENDOR)/etc/virtual-spn-conf-by-efspn.xml \
@@ -600,8 +562,6 @@ PRODUCT_COPY_FILES += \
     vendor/bluefox/Aura_A1/proprietary/vendor/firmware/feisu.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/feisu.bin \
     vendor/bluefox/Aura_A1/proprietary/vendor/firmware/feizhougu.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/feizhougu.bin \
     vendor/bluefox/Aura_A1/proprietary/vendor/firmware/fm_cust.cfg:$(TARGET_COPY_OUT_VENDOR)/firmware/fm_cust.cfg \
-    vendor/bluefox/Aura_A1/proprietary/vendor/firmware/goodix_cfg_group.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/goodix_cfg_group.bin \
-    vendor/bluefox/Aura_A1/proprietary/vendor/firmware/goodix_firmware.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/goodix_firmware.bin \
     vendor/bluefox/Aura_A1/proprietary/vendor/firmware/haptic_config.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/haptic_config.bin \
     vendor/bluefox/Aura_A1/proprietary/vendor/firmware/huaerzi.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/huaerzi.bin \
     vendor/bluefox/Aura_A1/proprietary/vendor/firmware/jinji.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/jinji.bin \
@@ -620,7 +580,9 @@ PRODUCT_COPY_FILES += \
     vendor/bluefox/Aura_A1/proprietary/vendor/firmware/mt6632_fm_v1_patch.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/mt6632_fm_v1_patch.bin \
     vendor/bluefox/Aura_A1/proprietary/vendor/firmware/mt6635_fm_v1_coeff.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/mt6635_fm_v1_coeff.bin \
     vendor/bluefox/Aura_A1/proprietary/vendor/firmware/mt6635_fm_v1_patch.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/mt6635_fm_v1_patch.bin \
+    vendor/bluefox/Aura_A1/proprietary/vendor/firmware/qiefen.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/qiefen.bin \
     vendor/bluefox/Aura_A1/proprietary/vendor/firmware/remoteproc_scp:$(TARGET_COPY_OUT_VENDOR)/firmware/remoteproc_scp \
+    vendor/bluefox/Aura_A1/proprietary/vendor/firmware/runin.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/runin.bin \
     vendor/bluefox/Aura_A1/proprietary/vendor/firmware/soc2_2_ram_bt_1d_1_hdr.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/soc2_2_ram_bt_1d_1_hdr.bin \
     vendor/bluefox/Aura_A1/proprietary/vendor/firmware/soc2_2_ram_bt_1e_1_hdr.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/soc2_2_ram_bt_1e_1_hdr.bin \
     vendor/bluefox/Aura_A1/proprietary/vendor/firmware/soc2_2_ram_mcu_1d_1_hdr.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/soc2_2_ram_mcu_1d_1_hdr.bin \
@@ -780,16 +742,6 @@ PRODUCT_PACKAGES += \
     libcamalgo.utility \
     libcamalgo.warp \
     libcamera2ndk_vendor \
-    libcamplugin.pi.dyn_prvdb \
-    libcamplugin.pi.dyn_prvfb \
-    libcamplugin.pi.dyn_prvglory \
-    libcamplugin.pi.dyn_prvpanorama \
-    libcamplugin.pi.dyn_prvscene \
-    libcamplugin.pi.dyn_stillfb \
-    libcamplugin.pi.dyn_stillglory \
-    libcamplugin.pi.dyn_stillhdr \
-    libcamplugin.pi.dyn_stillmfnr \
-    libcamplugin.pi.dyn_stillsn \
     libcapctrl \
     libcarrierconfig \
     libccci_util \
@@ -861,8 +813,8 @@ PRODUCT_PACKAGES += \
     libmtk-fusion-ril-prop-vsim \
     libmtk-ril \
     libmtk_bsg \
-    libmtkcam.plugin.jzhk_watermarkdata \
-    libmtkcam.plugin.jzhk_watermarklib \
+    libmtkcam.plugin.mono_capture \
+    libmtkcam.plugin.mono_preview \
     libmtkcam_pipelinepolicy-aov \
     libmtkconfig \
     libmtkconfigutils \
@@ -929,7 +881,6 @@ PRODUCT_PACKAGES += \
     libmvpuop_mtk_cv \
     libmvpuop_mtk_nn \
     libnbaio_mono \
-    libncnn_64 \
     libneuralnetworks_sl_driver_mtk_prebuilt \
     libneuron_graph_delegate.mtk \
     libnir_neon_driver_ndk.mtk.vndk \
@@ -942,8 +893,6 @@ PRODUCT_PACKAGES += \
     libnxp_extamp_intf \
     liboemcrypto \
     libperfctl_vendor \
-    libpi_prv_feature \
-    libpi_still_feature \
     libpkm \
     libpower_timer \
     libpowerhal \
@@ -1019,13 +968,6 @@ PRODUCT_PACKAGES += \
     libwo \
     libwpa_client \
     libwpfa \
-    libxapi_glory \
-    libxapi_mfe \
-    libxapi_portrait \
-    libxapi_portrait_prv \
-    libxapi_scene \
-    libxapi_stitch \
-    libxapi_vfb \
     arm.graphics-V5-ndk \
     arm.mali.platform-V2-ndk \
     gc5035sub_mipi_raw_IdxMgr \
@@ -1602,7 +1544,6 @@ PRODUCT_PACKAGES += \
     vendor_lib64_hw_vendor_mediatek_hardware_pq_aidl-impl_so \
     vendor_lib64_hw_vulkan_mali_so \
     vendor_lib64_hw_sensors_mt6789_so \
-    vendor_lib64_libncnn_so \
     vendor_lib64_arm_graphics-V5-ndk_so \
     vendor_lib64_arm_mali_platform-V2-ndk_so \
     vendor_lib64_gc5035sub_mipi_raw_IdxMgr_so \
@@ -1902,9 +1843,3 @@ PRODUCT_PACKAGES += \
 
 PRODUCT_BOOT_JARS += \
     mediatek-ims-base
-
-PRODUCT_PACKAGES += \
-    libcamplugin.pi.dyn_prvportrait \
-    libcamplugin.pi.dyn_stillportrait \
-    libpi_feature_check \
-    libpi_feature_util

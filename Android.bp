@@ -884,6 +884,7 @@ cc_prebuilt_library_shared {
                 "android.hardware.bluetooth.audio-V4-ndk-vendorcompat",
                 "android.hardware.audio.common@5.0",
                 "libtinycompress",
+                "libaedv",
                 "libdrm",
                 "libc++",
                 "libc",
@@ -1091,6 +1092,7 @@ cc_prebuilt_library_shared {
                 "android.hardware.graphics.common-V6-ndk-vendorcompat",
                 "android.hardware.graphics.allocator-V2-ndk",
                 "android.hardware.graphics.composer3-V4-ndk",
+                "libaedv",
                 "libdrm",
                 "libcutils",
                 "libutils",
@@ -1672,6 +1674,7 @@ cc_prebuilt_library_shared {
                 "libmedia_helper",
                 "libvow_comp_test",
                 "libhidlbase",
+                "libaedv",
                 "libxml2",
                 "libc++",
                 "libc",
@@ -2477,6 +2480,7 @@ cc_prebuilt_library_shared {
                 "libhardware",
                 "libpowerhal",
                 "vendor.mediatek.hardware.mtkpower@1.2",
+                "libaedv",
                 "libc++",
                 "libc",
                 "libm",
@@ -4140,405 +4144,6 @@ cc_prebuilt_library_shared {
                 "libnativewindow",
                 "libstagefright_foundation",
                 "libutils",
-                "libc++",
-                "libc",
-                "libm",
-                "libdl",
-            ],
-        },
-    },
-    compile_multilib: "64",
-    prefer: true,
-    soc_specific: true,
-}
-
-cc_prebuilt_library_shared {
-    name: "libcamplugin.pi.dyn_prvdb",
-    owner: "bluefox",
-    strip: {
-        none: true,
-    },
-    target: {
-        android_arm64: {
-            srcs: [
-                "proprietary/vendor/lib64/libcamplugin.pi.dyn_prvdb.so",
-            ],
-            shared_libs: [
-                "libpi_prv_feature",
-                "libpi_still_feature",
-                "libpi_feature_util",
-                "libpi_feature_check",
-                "liblog",
-                "libutils",
-                "libcutils",
-                "libmtkcam_modulehelper",
-                "libmtkcam_metadata",
-                "libmtkcam_imgbuf",
-                "libcam.iopipe",
-                "libmtkcam_3rdparty.core",
-                "libmtkcam_metastore",
-                "libfeatureiodrv_mem",
-                "libcameracustom",
-                "libcam.utils.sensorprovider",
-                "libc++",
-                "libc",
-                "libm",
-                "libdl",
-            ],
-        },
-    },
-    compile_multilib: "64",
-    prefer: true,
-    soc_specific: true,
-}
-
-cc_prebuilt_library_shared {
-    name: "libcamplugin.pi.dyn_prvfb",
-    owner: "bluefox",
-    strip: {
-        none: true,
-    },
-    target: {
-        android_arm64: {
-            srcs: [
-                "proprietary/vendor/lib64/libcamplugin.pi.dyn_prvfb.so",
-            ],
-            shared_libs: [
-                "libpi_prv_feature",
-                "libpi_still_feature",
-                "libpi_feature_util",
-                "libpi_feature_check",
-                "liblog",
-                "libutils",
-                "libcutils",
-                "libmtkcam_modulehelper",
-                "libmtkcam_metadata",
-                "libmtkcam_imgbuf",
-                "libcam.iopipe",
-                "libcam.utils.sensorprovider",
-                "libmtkcam_3rdparty.core",
-                "libmtkcam_metastore",
-                "libfeatureiodrv_mem",
-                "libcameracustom",
-                "libc++",
-                "libc",
-                "libm",
-                "libdl",
-            ],
-        },
-    },
-    compile_multilib: "64",
-    prefer: true,
-    soc_specific: true,
-}
-
-cc_prebuilt_library_shared {
-    name: "libcamplugin.pi.dyn_prvglory",
-    owner: "bluefox",
-    strip: {
-        none: true,
-    },
-    target: {
-        android_arm64: {
-            srcs: [
-                "proprietary/vendor/lib64/libcamplugin.pi.dyn_prvglory.so",
-            ],
-            shared_libs: [
-                "libpi_prv_feature",
-                "libpi_still_feature",
-                "libpi_feature_util",
-                "libpi_feature_check",
-                "liblog",
-                "libutils",
-                "libcutils",
-                "libmtkcam_modulehelper",
-                "libmtkcam_metadata",
-                "libmtkcam_imgbuf",
-                "libcam.iopipe",
-                "libcam.utils.sensorprovider",
-                "libmtkcam_3rdparty.core",
-                "libmtkcam_metastore",
-                "libfeatureiodrv_mem",
-                "libcameracustom",
-                "libc++",
-                "libc",
-                "libm",
-                "libdl",
-            ],
-        },
-    },
-    compile_multilib: "64",
-    prefer: true,
-    soc_specific: true,
-}
-
-cc_prebuilt_library_shared {
-    name: "libcamplugin.pi.dyn_prvpanorama",
-    owner: "bluefox",
-    strip: {
-        none: true,
-    },
-    target: {
-        android_arm64: {
-            srcs: [
-                "proprietary/vendor/lib64/libcamplugin.pi.dyn_prvpanorama.so",
-            ],
-            shared_libs: [
-                "libpi_prv_feature",
-                "libpi_still_feature",
-                "libpi_feature_util",
-                "libpi_feature_check",
-                "liblog",
-                "libutils",
-                "libcutils",
-                "libmtkcam_imgbuf",
-                "libmtkcam_metadata",
-                "libmtkcam_stdutils",
-                "libmtkcam_3rdparty.core",
-                "libcam.iopipe",
-                "libmtkcam_modulehelper",
-                "libcam.utils.sensorprovider",
-                "libc++",
-                "libc",
-                "libm",
-                "libdl",
-            ],
-        },
-    },
-    compile_multilib: "64",
-    prefer: true,
-    soc_specific: true,
-}
-
-cc_prebuilt_library_shared {
-    name: "libcamplugin.pi.dyn_prvscene",
-    owner: "bluefox",
-    strip: {
-        none: true,
-    },
-    target: {
-        android_arm64: {
-            srcs: [
-                "proprietary/vendor/lib64/libcamplugin.pi.dyn_prvscene.so",
-            ],
-            shared_libs: [
-                "libpi_prv_feature",
-                "libpi_still_feature",
-                "libpi_feature_util",
-                "libpi_feature_check",
-                "liblog",
-                "libutils",
-                "libcutils",
-                "libmtkcam_modulehelper",
-                "libmtkcam_metadata",
-                "libmtkcam_imgbuf",
-                "libcam.iopipe",
-                "libcam.utils.sensorprovider",
-                "libmtkcam_3rdparty.core",
-                "libmtkcam_metastore",
-                "libfeatureiodrv_mem",
-                "libc++",
-                "libc",
-                "libm",
-                "libdl",
-            ],
-        },
-    },
-    compile_multilib: "64",
-    prefer: true,
-    soc_specific: true,
-}
-
-cc_prebuilt_library_shared {
-    name: "libcamplugin.pi.dyn_stillfb",
-    owner: "bluefox",
-    strip: {
-        none: true,
-    },
-    target: {
-        android_arm64: {
-            srcs: [
-                "proprietary/vendor/lib64/libcamplugin.pi.dyn_stillfb.so",
-            ],
-            shared_libs: [
-                "libpi_prv_feature",
-                "libpi_still_feature",
-                "libpi_feature_util",
-                "libpi_feature_check",
-                "liblog",
-                "libutils",
-                "libcutils",
-                "libmtkcam_modulehelper",
-                "libmtkcam_stdutils",
-                "libmtkcam_pipeline",
-                "libmtkcam_metadata",
-                "libmtkcam_metastore",
-                "libmtkcam_streamutils",
-                "libmtkcam_imgbuf",
-                "libmtkcam_3rdparty.core",
-                "libfeatureiodrv_mem",
-                "libcam.iopipe",
-                "libcam.utils.sensorprovider",
-                "libc++",
-                "libc",
-                "libm",
-                "libdl",
-            ],
-        },
-    },
-    compile_multilib: "64",
-    prefer: true,
-    soc_specific: true,
-}
-
-cc_prebuilt_library_shared {
-    name: "libcamplugin.pi.dyn_stillglory",
-    owner: "bluefox",
-    strip: {
-        none: true,
-    },
-    target: {
-        android_arm64: {
-            srcs: [
-                "proprietary/vendor/lib64/libcamplugin.pi.dyn_stillglory.so",
-            ],
-            shared_libs: [
-                "libpi_prv_feature",
-                "libpi_still_feature",
-                "libpi_feature_util",
-                "libpi_feature_check",
-                "liblog",
-                "libutils",
-                "libcutils",
-                "libmtkcam_modulehelper",
-                "libmtkcam_stdutils",
-                "libmtkcam_metadata",
-                "libmtkcam_metastore",
-                "libmtkcam_imgbuf",
-                "libmtkcam_3rdparty.core",
-                "libfeatureiodrv_mem",
-                "libcam.iopipe",
-                "libcam.utils.sensorprovider",
-                "libc++",
-                "libc",
-                "libm",
-                "libdl",
-            ],
-        },
-    },
-    compile_multilib: "64",
-    prefer: true,
-    soc_specific: true,
-}
-
-cc_prebuilt_library_shared {
-    name: "libcamplugin.pi.dyn_stillhdr",
-    owner: "bluefox",
-    strip: {
-        none: true,
-    },
-    target: {
-        android_arm64: {
-            srcs: [
-                "proprietary/vendor/lib64/libcamplugin.pi.dyn_stillhdr.so",
-            ],
-            shared_libs: [
-                "libpi_prv_feature",
-                "libpi_still_feature",
-                "libpi_feature_util",
-                "libpi_feature_check",
-                "liblog",
-                "libutils",
-                "libcutils",
-                "libmtkcam_modulehelper",
-                "libmtkcam_stdutils",
-                "libmtkcam_metadata",
-                "libmtkcam_imgbuf",
-                "libcam.iopipe",
-                "libcam.utils.sensorprovider",
-                "libmtkcam_3rdparty.core",
-                "libmtkcam_metastore",
-                "libfeatureiodrv_mem",
-                "libc++",
-                "libc",
-                "libm",
-                "libdl",
-            ],
-        },
-    },
-    compile_multilib: "64",
-    prefer: true,
-    soc_specific: true,
-}
-
-cc_prebuilt_library_shared {
-    name: "libcamplugin.pi.dyn_stillmfnr",
-    owner: "bluefox",
-    strip: {
-        none: true,
-    },
-    target: {
-        android_arm64: {
-            srcs: [
-                "proprietary/vendor/lib64/libcamplugin.pi.dyn_stillmfnr.so",
-            ],
-            shared_libs: [
-                "libpi_prv_feature",
-                "libpi_still_feature",
-                "libpi_feature_util",
-                "libpi_feature_check",
-                "liblog",
-                "libutils",
-                "libcutils",
-                "libmtkcam_modulehelper",
-                "libmtkcam_stdutils",
-                "libmtkcam_metadata",
-                "libmtkcam_imgbuf",
-                "libcam.iopipe",
-                "libcam.utils.sensorprovider",
-                "libmtkcam_3rdparty.core",
-                "libmtkcam_metastore",
-                "libfeatureiodrv_mem",
-                "libc++",
-                "libc",
-                "libm",
-                "libdl",
-            ],
-        },
-    },
-    compile_multilib: "64",
-    prefer: true,
-    soc_specific: true,
-}
-
-cc_prebuilt_library_shared {
-    name: "libcamplugin.pi.dyn_stillsn",
-    owner: "bluefox",
-    strip: {
-        none: true,
-    },
-    target: {
-        android_arm64: {
-            srcs: [
-                "proprietary/vendor/lib64/libcamplugin.pi.dyn_stillsn.so",
-            ],
-            shared_libs: [
-                "libpi_prv_feature",
-                "libpi_still_feature",
-                "libpi_feature_util",
-                "libpi_feature_check",
-                "liblog",
-                "libutils",
-                "libcutils",
-                "libmtkcam_modulehelper",
-                "libmtkcam_stdutils",
-                "libmtkcam_metadata",
-                "libmtkcam_imgbuf",
-                "libcam.iopipe",
-                "libcam.utils.sensorprovider",
-                "libmtkcam_3rdparty.core",
-                "libmtkcam_metastore",
-                "libfeatureiodrv_mem",
                 "libc++",
                 "libc",
                 "libm",
@@ -6741,7 +6346,7 @@ cc_prebuilt_library_shared {
 }
 
 cc_prebuilt_library_shared {
-    name: "libmtkcam.plugin.jzhk_watermarkdata",
+    name: "libmtkcam.plugin.mono_capture",
     owner: "bluefox",
     strip: {
         none: true,
@@ -6749,9 +6354,22 @@ cc_prebuilt_library_shared {
     target: {
         android_arm64: {
             srcs: [
-                "proprietary/vendor/lib64/libmtkcam.plugin.jzhk_watermarkdata.so",
+                "proprietary/vendor/lib64/libmtkcam.plugin.mono_capture.so",
             ],
             shared_libs: [
+                "liblog",
+                "libutils",
+                "libcutils",
+                "libmtkcam_modulehelper",
+                "libmtkcam_stdutils",
+                "libmtkcam_metadata",
+                "libmtkcam_metastore",
+                "libmtkcam_imgbuf",
+                "libmtkcam_3rdparty.core",
+                "libfeatureiodrv_mem",
+                "libcameracustom",
+                "libcam.iopipe",
+                "libcam.utils.sensorprovider",
                 "libc++",
                 "libc",
                 "libm",
@@ -6765,7 +6383,7 @@ cc_prebuilt_library_shared {
 }
 
 cc_prebuilt_library_shared {
-    name: "libmtkcam.plugin.jzhk_watermarklib",
+    name: "libmtkcam.plugin.mono_preview",
     owner: "bluefox",
     strip: {
         none: true,
@@ -6773,12 +6391,22 @@ cc_prebuilt_library_shared {
     target: {
         android_arm64: {
             srcs: [
-                "proprietary/vendor/lib64/libmtkcam.plugin.jzhk_watermarklib.so",
+                "proprietary/vendor/lib64/libmtkcam.plugin.mono_preview.so",
             ],
             shared_libs: [
                 "liblog",
-                "libyuv",
-                "libmtkcam.plugin.jzhk_watermarkdata",
+                "libutils",
+                "libcutils",
+                "libmtkcam_modulehelper",
+                "libmtkcam_stdutils",
+                "libmtkcam_metadata",
+                "libmtkcam_metastore",
+                "libmtkcam_imgbuf",
+                "libcam.iopipe",
+                "libcam.utils.sensorprovider",
+                "libmtkcam_3rdparty.core",
+                "libfeatureiodrv_mem",
+                "libcameracustom",
                 "libc++",
                 "libc",
                 "libm",
@@ -8617,32 +8245,6 @@ cc_prebuilt_library_shared {
 }
 
 cc_prebuilt_library_shared {
-    name: "libncnn_64",
-    owner: "bluefox",
-    strip: {
-        none: true,
-    },
-    target: {
-        android_arm64: {
-            srcs: [
-                "proprietary/vendor/lib64/libncnn_64.so",
-            ],
-            shared_libs: [
-                "libm",
-                "liblog",
-                "libGLESv2",
-                "libEGL",
-                "libc",
-                "libdl",
-            ],
-        },
-    },
-    compile_multilib: "64",
-    prefer: true,
-    soc_specific: true,
-}
-
-cc_prebuilt_library_shared {
     name: "libneuralnetworks_sl_driver_mtk_prebuilt",
     owner: "bluefox",
     strip: {
@@ -9002,67 +8604,6 @@ cc_prebuilt_library_shared {
 }
 
 cc_prebuilt_library_shared {
-    name: "libpi_prv_feature",
-    owner: "bluefox",
-    strip: {
-        none: true,
-    },
-    target: {
-        android_arm64: {
-            srcs: [
-                "proprietary/vendor/lib64/libpi_prv_feature.so",
-            ],
-            shared_libs: [
-                "libcutils",
-                "liblog",
-                "libxapi_scene",
-                "libxapi_stitch",
-                "libxapi_vfb",
-                "libxapi_portrait_prv",
-                "libxapi_glory",
-                "libc++",
-                "libc",
-                "libm",
-                "libdl",
-            ],
-        },
-    },
-    compile_multilib: "64",
-    prefer: true,
-    soc_specific: true,
-}
-
-cc_prebuilt_library_shared {
-    name: "libpi_still_feature",
-    owner: "bluefox",
-    strip: {
-        none: true,
-    },
-    target: {
-        android_arm64: {
-            srcs: [
-                "proprietary/vendor/lib64/libpi_still_feature.so",
-            ],
-            shared_libs: [
-                "libcutils",
-                "liblog",
-                "libxapi_mfe",
-                "libxapi_vfb",
-                "libxapi_portrait",
-                "libxapi_glory",
-                "libc++",
-                "libc",
-                "libm",
-                "libdl",
-            ],
-        },
-    },
-    compile_multilib: "64",
-    prefer: true,
-    soc_specific: true,
-}
-
-cc_prebuilt_library_shared {
     name: "libpkm",
     owner: "bluefox",
     strip: {
@@ -9161,6 +8702,7 @@ cc_prebuilt_library_shared {
                 "libbinder",
                 "vendor.mediatek.framework.mtksf_ext-V7-ndk",
                 "android.hardware.bluetooth.audio-V4-ndk-vendorcompat",
+                "libaedv",
                 "libc++",
                 "libc",
                 "libm",
@@ -11185,197 +10727,6 @@ cc_prebuilt_library_shared {
                 "libc",
                 "libm",
                 "libdl",
-            ],
-        },
-    },
-    compile_multilib: "64",
-    prefer: true,
-    soc_specific: true,
-}
-
-cc_prebuilt_library_shared {
-    name: "libxapi_glory",
-    owner: "bluefox",
-    strip: {
-        none: true,
-    },
-    target: {
-        android_arm64: {
-            srcs: [
-                "proprietary/vendor/lib64/libxapi_glory.so",
-            ],
-            shared_libs: [
-                "libz",
-                "libdl",
-                "libm",
-                "liblog",
-                "libGLESv2",
-                "libEGL",
-                "libc",
-            ],
-        },
-    },
-    compile_multilib: "64",
-    prefer: true,
-    soc_specific: true,
-}
-
-cc_prebuilt_library_shared {
-    name: "libxapi_mfe",
-    owner: "bluefox",
-    strip: {
-        none: true,
-    },
-    target: {
-        android_arm64: {
-            srcs: [
-                "proprietary/vendor/lib64/libxapi_mfe.so",
-            ],
-            shared_libs: [
-                "libz",
-                "libdl",
-                "libm",
-                "liblog",
-                "libGLESv2",
-                "libEGL",
-                "libc",
-            ],
-        },
-    },
-    compile_multilib: "64",
-    prefer: true,
-    soc_specific: true,
-}
-
-cc_prebuilt_library_shared {
-    name: "libxapi_portrait",
-    owner: "bluefox",
-    strip: {
-        none: true,
-    },
-    target: {
-        android_arm64: {
-            srcs: [
-                "proprietary/vendor/lib64/libxapi_portrait.so",
-            ],
-            shared_libs: [
-                "libncnn_64",
-                "libz",
-                "libdl",
-                "libm",
-                "liblog",
-                "libGLESv2",
-                "libEGL",
-                "libc",
-            ],
-        },
-    },
-    compile_multilib: "64",
-    prefer: true,
-    soc_specific: true,
-}
-
-cc_prebuilt_library_shared {
-    name: "libxapi_portrait_prv",
-    owner: "bluefox",
-    strip: {
-        none: true,
-    },
-    target: {
-        android_arm64: {
-            srcs: [
-                "proprietary/vendor/lib64/libxapi_portrait_prv.so",
-            ],
-            shared_libs: [
-                "libncnn_64",
-                "libz",
-                "libdl",
-                "libm",
-                "liblog",
-                "libGLESv2",
-                "libEGL",
-                "libc",
-            ],
-        },
-    },
-    compile_multilib: "64",
-    prefer: true,
-    soc_specific: true,
-}
-
-cc_prebuilt_library_shared {
-    name: "libxapi_scene",
-    owner: "bluefox",
-    strip: {
-        none: true,
-    },
-    target: {
-        android_arm64: {
-            srcs: [
-                "proprietary/vendor/lib64/libxapi_scene.so",
-            ],
-            shared_libs: [
-                "libz",
-                "libdl",
-                "libm",
-                "liblog",
-                "libGLESv2",
-                "libEGL",
-                "libc",
-            ],
-        },
-    },
-    compile_multilib: "64",
-    prefer: true,
-    soc_specific: true,
-}
-
-cc_prebuilt_library_shared {
-    name: "libxapi_stitch",
-    owner: "bluefox",
-    strip: {
-        none: true,
-    },
-    target: {
-        android_arm64: {
-            srcs: [
-                "proprietary/vendor/lib64/libxapi_stitch.so",
-            ],
-            shared_libs: [
-                "libz",
-                "libdl",
-                "libm",
-                "liblog",
-                "libGLESv2",
-                "libEGL",
-                "libc",
-            ],
-        },
-    },
-    compile_multilib: "64",
-    prefer: true,
-    soc_specific: true,
-}
-
-cc_prebuilt_library_shared {
-    name: "libxapi_vfb",
-    owner: "bluefox",
-    strip: {
-        none: true,
-    },
-    target: {
-        android_arm64: {
-            srcs: [
-                "proprietary/vendor/lib64/libxapi_vfb.so",
-            ],
-            shared_libs: [
-                "libz",
-                "libdl",
-                "libm",
-                "liblog",
-                "libGLESv2",
-                "libEGL",
-                "libc",
             ],
         },
     },
@@ -14759,6 +14110,7 @@ cc_prebuilt_library_shared {
                 "proprietary/vendor/lib64/mt6789/libcam.afhal.so",
             ],
             shared_libs: [
+                "libaedv",
                 "liblog",
                 "libutils",
                 "libcutils",
@@ -14861,6 +14213,7 @@ cc_prebuilt_library_shared {
                 "lib3a.ae.core",
                 "libcameracustom",
                 "libmtkcam_mapping_mgr",
+                "libaedv",
                 "libdip_postproc",
                 "libcam.halsensor",
                 "libc++",
@@ -15200,6 +14553,7 @@ cc_prebuilt_library_shared {
                 "lib3a.flash",
                 "libcam.tuning.cache",
                 "libcameracustom.camera.isp",
+                "libaedv",
                 "lib3a.af.core",
                 "lib3a.af.assist",
                 "lib3a.ae.core",
@@ -15271,6 +14625,7 @@ cc_prebuilt_library_shared {
                 "libbinder",
                 "lib3a.flash",
                 "libfeatureiodrv_mem",
+                "libaedv",
                 "libcameracustom",
                 "libcameracustom.camera.isp",
                 "libc++",
@@ -15359,6 +14714,7 @@ cc_prebuilt_library_shared {
                 "vendor.mediatek.hardware.mtkpower-V1-ndk",
                 "libcamalgo.nr",
                 "libmtkcam_mapping_mgr",
+                "libaedv",
                 "libmtkcam_tuning_utils",
                 "libmtkcam.atmseventmgr",
                 "libcameracustom",
@@ -15393,6 +14749,7 @@ cc_prebuilt_library_shared {
             shared_libs: [
                 "libfeatureiodrv_mem",
                 "libcam.hal3a.v3.lscMgr",
+                "libaedv",
                 "liblog",
                 "libutils",
                 "libcutils",
@@ -15533,6 +14890,7 @@ cc_prebuilt_library_shared {
                 "libmtkcam_hwutils",
                 "libmtkcam_modulehelper",
                 "libcamdrv_tuning_mgr",
+                "libaedv",
                 "libhidlbase",
                 "libhidltransport",
                 "libhwbinder",
@@ -15590,6 +14948,7 @@ cc_prebuilt_library_shared {
                 "libmtkcam_modulehelper",
                 "libcamdrv_tuning_mgr",
                 "libcam.pdtblgen",
+                "libaedv",
                 "libhidlbase",
                 "libhidltransport",
                 "libhwbinder",
@@ -15680,6 +15039,7 @@ cc_prebuilt_library_shared {
             ],
             shared_libs: [
                 "libdmabufheap",
+                "libaedv",
                 "liblog",
                 "libutils",
                 "libcutils",
@@ -15763,6 +15123,7 @@ cc_prebuilt_library_shared {
                 "vendor.mediatek.hardware.mtkpower@1.0",
                 "libcamalgo.nr",
                 "lib3a.ae.core",
+                "libaedv",
                 "libmtkcam_tuning_utils",
                 "libmtkcam_mapping_mgr",
                 "libmtkcam.atmseventmgr",
@@ -15916,6 +15277,7 @@ cc_prebuilt_library_shared {
                 "libmtkcam_stdutils",
                 "libmtkcam_sysutils",
                 "libmtkcam_ulog",
+                "libaedv",
                 "libc++",
                 "libc",
                 "libm",
@@ -16307,6 +15669,7 @@ cc_prebuilt_library_shared {
             shared_libs: [
                 "liblog",
                 "libcutils",
+                "libaedv",
                 "libmtkcam_stdutils",
                 "libc++",
                 "libc",
@@ -16772,6 +16135,7 @@ cc_prebuilt_library_shared {
                 "liblog",
                 "libcutils",
                 "libc++",
+                "libaedv",
                 "libmtkcam_diputils",
                 "libmtkcam_imem",
                 "libdip_drv",
@@ -16803,6 +16167,7 @@ cc_prebuilt_library_shared {
                 "proprietary/vendor/lib64/mt6789/libdpframework.so",
             ],
             shared_libs: [
+                "libaedv",
                 "libaiselector",
                 "libdmabufheap",
                 "vendor.mediatek.hardware.mmagent-V1-ndk",
@@ -17140,6 +16505,7 @@ cc_prebuilt_library_shared {
                 "libcameracustom",
                 "libcam.utils.sensorprovider",
                 "libcameracustom.eis",
+                "libaedv",
                 "libc++",
                 "libc",
                 "libm",
@@ -17328,6 +16694,7 @@ cc_prebuilt_library_shared {
                 "proprietary/vendor/lib64/mt6789/libimageio_plat_drv.so",
             ],
             shared_libs: [
+                "libaedv",
                 "libcamdrv_tuning_mgr",
                 "liblog",
                 "libcutils",
@@ -17365,6 +16732,7 @@ cc_prebuilt_library_shared {
                 "libutils",
                 "liblog",
                 "libcutils",
+                "libaedv",
                 "libimageio_plat_drv",
                 "libcamdrv_isp",
                 "libmtkcam_stdutils",
@@ -17616,6 +16984,7 @@ cc_prebuilt_library_shared {
                 "libutils",
                 "libcutils",
                 "libladder",
+                "libaedv",
                 "libc++",
                 "libc",
                 "libm",
@@ -17705,6 +17074,7 @@ cc_prebuilt_library_shared {
                 "libmtkcam_mapping_mgr",
                 "libfeature.stereo.provider",
                 "lib3a.awb.core",
+                "libaedv",
                 "libmsnr",
                 "libc++",
                 "libc",
@@ -17904,6 +17274,7 @@ cc_prebuilt_library_shared {
                 "libmtkcam_ulog",
                 "libmtkcam_stdutils",
                 "libcameracustom",
+                "libaedv",
                 "libc++",
                 "libc",
                 "libm",
@@ -17974,38 +17345,8 @@ cc_prebuilt_library_shared {
                 "libfeature.stereo.provider",
                 "libmtkcam_hwutils",
                 "libmtkcam_modulehelper",
-                "libpi_prv_feature",
-                "libpi_still_feature",
-                "libpi_feature_util",
-                "libpi_feature_check",
-                "libmtkcam_tuning_utils",
-                "libdpframework",
-                "libmtkcam_metastore",
-                "libfeatureiodrv_mem",
-                "libcam.utils.sensorprovider",
-                "libxapi_vfb",
-                "libcamplugin.pi.dyn_prvfb",
-                "libcamplugin.pi.dyn_stillfb",
-                "libxapi_scene",
-                "libcamplugin.pi.dyn_prvscene",
-                "libcamplugin.pi.dyn_prvdb",
-                "libcamplugin.pi.dyn_stillhdr",
-                "libxapi_mfe",
-                "libcamplugin.pi.dyn_stillsn",
-                "libxapi_portrait",
-                "libxapi_portrait_prv",
-                "libcamplugin.pi.dyn_prvportrait",
-                "libcamplugin.pi.dyn_stillportrait",
-                "libncnn_64",
-                "libxapi_stitch",
-                "libcamplugin.pi.dyn_prvpanorama",
-                "libxapi_glory",
-                "libcamplugin.pi.dyn_prvglory",
-                "libcamplugin.pi.dyn_stillglory",
-                "libcamplugin.pi.dyn_stillmfnr",
-                "libmtkcam.plugin.jzhk_watermarklib",
-                "libmtkcam.plugin.jzhk_watermarkdata",
-                "libyuv",
+                "libmtkcam.plugin.mono_capture",
+                "libmtkcam.plugin.mono_preview",
                 "libc++",
                 "libc",
                 "libm",
@@ -18273,10 +17614,6 @@ cc_prebuilt_library_shared {
                 "libmtkcam_devicesessionpolicy",
                 "libmtkcam_pipelinemodel",
                 "libmtkcam_hwutils",
-                "libpi_prv_feature",
-                "libpi_still_feature",
-                "libpi_feature_util",
-                "libpi_feature_check",
                 "libc++",
                 "libc",
                 "libm",
@@ -18368,6 +17705,7 @@ cc_prebuilt_library_shared {
                 "libmtkcam_streamutils",
                 "libcamera_metadata",
                 "libmtkcam_ulog",
+                "libaedv",
                 "libc++",
                 "libc",
                 "libm",
@@ -18408,6 +17746,7 @@ cc_prebuilt_library_shared {
                 "libmtkcam_streamutils",
                 "android.hardware.graphics.common@1.2",
                 "libmtkcam_ulog",
+                "libaedv",
                 "libc++",
                 "libc",
                 "libm",
@@ -18560,10 +17899,6 @@ cc_prebuilt_library_shared {
                 "proprietary/vendor/lib64/mt6789/libmtkcam_featurepolicy.so",
             ],
             shared_libs: [
-                "libpi_prv_feature",
-                "libpi_still_feature",
-                "libpi_feature_util",
-                "libpi_feature_check",
                 "liblog",
                 "libutils",
                 "libcutils",
@@ -18582,6 +17917,7 @@ cc_prebuilt_library_shared {
                 "libcameracustom",
                 "libfeature.stereo.provider",
                 "libcameracustom.eis",
+                "libaedv",
                 "libcam.feature_utils",
                 "libcam.vhdr",
                 "libcam.chdr",
@@ -18895,6 +18231,7 @@ cc_prebuilt_library_shared {
                 "libmtkcam_pipeline",
                 "libfeature_eis",
                 "libcameracustom.eis",
+                "libaedv",
                 "libladder",
                 "libmtkcam_exif",
                 "libstereoinfoaccessor_vsdof",
@@ -18913,13 +18250,6 @@ cc_prebuilt_library_shared {
                 "libmtkcam_mapping_mgr",
                 "libmtkcam.featurepipe.streaming",
                 "libmtkcam.featurepipe.capture",
-                "libpi_prv_feature",
-                "libpi_still_feature",
-                "libpi_feature_util",
-                "libpi_feature_check",
-                "libmtkcam_3rdparty.customer",
-                "libmtkcam.plugin.jzhk_watermarklib",
-                "libmtkcam.plugin.jzhk_watermarkdata",
                 "libmtkcam_synchelper",
                 "lib3a.flash",
                 "lib3a.awb.core",
@@ -18997,6 +18327,7 @@ cc_prebuilt_library_shared {
                 "proprietary/vendor/lib64/mt6789/libmtkcam_imem.so",
             ],
             shared_libs: [
+                "libaedv",
                 "liblog",
                 "libcutils",
                 "libc++",
@@ -19037,6 +18368,7 @@ cc_prebuilt_library_shared {
                 "libnativewindow",
                 "libion",
                 "libion_mtk",
+                "libaedv",
                 "libdmabufheap",
                 "libmtkcam_stdutils",
                 "libmtkcam_debugutils",
@@ -19111,6 +18443,7 @@ cc_prebuilt_library_shared {
                 "proprietary/vendor/lib64/mt6789/libmtkcam_metadata.so",
             ],
             shared_libs: [
+                "libaedv",
                 "liblog",
                 "libmtkcam_ulog",
                 "libutils",
@@ -19396,6 +18729,7 @@ cc_prebuilt_library_shared {
                 "libutils",
                 "libcutils",
                 "libhardware",
+                "libaedv",
                 "libmtkcam_stdutils",
                 "libmtkcam_debugutils",
                 "libmtkcam_ulog",
@@ -19513,6 +18847,7 @@ cc_prebuilt_library_shared {
                 "libmtkcam_hwutils",
                 "libmtkcam_featureutils",
                 "libmtkcam_ulog",
+                "libaedv",
                 "libc++",
                 "libc",
                 "libm",
@@ -19639,6 +18974,7 @@ cc_prebuilt_library_shared {
                 "libbwc",
                 "libmtkcam_prerelease",
                 "libmtkcam_scenariorecorder",
+                "libaedv",
                 "libmtkcam_pipelinemodel_zsl",
                 "libmtkcam_pipelinemodel_capture",
                 "libhidlbase",
@@ -19691,6 +19027,7 @@ cc_prebuilt_library_shared {
                 "libfeature.stereo.provider",
                 "libmtkcam_synchelper",
                 "libmtkcam_ulog",
+                "libaedv",
                 "libc++",
                 "libc",
                 "libm",
@@ -19789,10 +19126,6 @@ cc_prebuilt_library_shared {
                 "proprietary/vendor/lib64/mt6789/libmtkcam_pipelinepolicy-smvr.so",
             ],
             shared_libs: [
-                "libpi_prv_feature",
-                "libpi_still_feature",
-                "libpi_feature_util",
-                "libpi_feature_check",
                 "liblog",
                 "libutils",
                 "libcutils",
@@ -19829,10 +19162,6 @@ cc_prebuilt_library_shared {
                 "proprietary/vendor/lib64/mt6789/libmtkcam_pipelinepolicy.so",
             ],
             shared_libs: [
-                "libpi_prv_feature",
-                "libpi_still_feature",
-                "libpi_feature_util",
-                "libpi_feature_check",
                 "liblog",
                 "libutils",
                 "libcutils",
@@ -19848,6 +19177,7 @@ cc_prebuilt_library_shared {
                 "libcameracustom",
                 "libfeature.stereo.provider",
                 "libcameracustom.eis",
+                "libaedv",
                 "libmtkcam_featurepolicy",
                 "libmtkcam_3rdparty",
                 "libmtkcam_3rdparty.core",
@@ -19917,6 +19247,7 @@ cc_prebuilt_library_shared {
                 "liblog",
                 "libutils",
                 "libcutils",
+                "libaedv",
                 "libmtkcam_metadata",
                 "libmtkcam_stdutils",
                 "libmtkcam.eventcallback",
@@ -20015,6 +19346,7 @@ cc_prebuilt_library_shared {
                 "libsync",
                 "libladder",
                 "libmtkcam_ulog",
+                "libaedv",
                 "libc++",
                 "libc",
                 "libm",
@@ -20187,6 +19519,7 @@ cc_prebuilt_library_shared {
                 "libutils",
                 "libcutils",
                 "libladder",
+                "libaedv",
                 "libmtkcam_debugutils",
                 "libc++",
                 "libc",
@@ -20411,6 +19744,7 @@ cc_prebuilt_library_shared {
                 "libsdrparser",
                 "libpqhdrmetaparser",
                 "libpqcustutils",
+                "libaedv",
                 "libutils",
                 "libcutils",
                 "liblog",
@@ -25694,6 +25028,7 @@ cc_prebuilt_binary {
                 "libmtkcutils",
                 "libmtkrillog",
                 "libmtkproperty",
+                "libaedv",
                 "libc++",
                 "libc",
                 "libm",
@@ -27450,6 +26785,7 @@ cc_prebuilt_binary {
                 "libifcutils_mtk",
                 "libmipc",
                 "libmtkproperty",
+                "libaedv",
                 "libc++",
                 "libc",
                 "libm",
@@ -28054,13 +27390,6 @@ install_symlink {
     soc_specific: true,
     installed_location: "lib64/hw/sensors.mt6789.so",
     symlink_target: "/vendor/lib64/hw/sensors.mediatek.V2.0.so",
-}
-
-install_symlink {
-    name: "vendor_lib64_libncnn_so",
-    soc_specific: true,
-    installed_location: "lib64/libncnn.so",
-    symlink_target: "/vendor/lib64/libncnn_64.so",
 }
 
 install_symlink {
@@ -30133,145 +29462,6 @@ install_symlink {
     soc_specific: true,
     installed_location: "lib64/mtkcam/libmtkcam_streaminfo_plugin-p1stt.so",
     symlink_target: "/vendor/lib64/mtkcam/mt6789/libmtkcam_streaminfo_plugin-p1stt.so",
-}
-
-cc_prebuilt_library_shared {
-    name: "libcamplugin.pi.dyn_prvportrait",
-    owner: "bluefox",
-    strip: {
-        none: true,
-    },
-    target: {
-        android_arm64: {
-            srcs: [
-                "proprietary/vendor/lib64/libcamplugin.pi.dyn_prvportrait.so",
-            ],
-            shared_libs: [
-                "libpi_prv_feature",
-                "libpi_still_feature",
-                "libpi_feature_util",
-                "libpi_feature_check",
-                "liblog",
-                "libutils",
-                "libcutils",
-                "libmtkcam_modulehelper",
-                "libmtkcam_metadata",
-                "libmtkcam_imgbuf",
-                "libcam.iopipe",
-                "libcam.utils.sensorprovider",
-                "libmtkcam_3rdparty.core",
-                "libmtkcam_metastore",
-                "libfeatureiodrv_mem",
-                "libc++",
-                "libc",
-                "libm",
-                "libdl",
-            ],
-        },
-    },
-    compile_multilib: "64",
-    prefer: true,
-    soc_specific: true,
-    ignore_max_page_size: true,
-}
-
-cc_prebuilt_library_shared {
-    name: "libcamplugin.pi.dyn_stillportrait",
-    owner: "bluefox",
-    strip: {
-        none: true,
-    },
-    target: {
-        android_arm64: {
-            srcs: [
-                "proprietary/vendor/lib64/libcamplugin.pi.dyn_stillportrait.so",
-            ],
-            shared_libs: [
-                "libpi_prv_feature",
-                "libpi_still_feature",
-                "libpi_feature_util",
-                "libpi_feature_check",
-                "liblog",
-                "libutils",
-                "libcutils",
-                "libmtkcam_modulehelper",
-                "libmtkcam_stdutils",
-                "libmtkcam_metadata",
-                "libmtkcam_metastore",
-                "libmtkcam_imgbuf",
-                "libcam.utils.sensorprovider",
-                "libmtkcam_3rdparty.core",
-                "libfeatureiodrv_mem",
-                "libcam.iopipe",
-                "libc++",
-                "libc",
-                "libm",
-                "libdl",
-            ],
-        },
-    },
-    compile_multilib: "64",
-    prefer: true,
-    soc_specific: true,
-    ignore_max_page_size: true,
-}
-
-cc_prebuilt_library_shared {
-    name: "libpi_feature_check",
-    owner: "bluefox",
-    strip: {
-        none: true,
-    },
-    target: {
-        android_arm64: {
-            srcs: [
-                "proprietary/vendor/lib64/libpi_feature_check.so",
-            ],
-            shared_libs: [
-                "liblog",
-                "libutils",
-                "libcutils",
-                "libcam.utils.sensorprovider",
-                "libmtkcam_modulehelper",
-                "libc++",
-                "libc",
-                "libm",
-                "libdl",
-            ],
-        },
-    },
-    compile_multilib: "64",
-    prefer: true,
-    soc_specific: true,
-    ignore_max_page_size: true,
-}
-
-cc_prebuilt_library_shared {
-    name: "libpi_feature_util",
-    owner: "bluefox",
-    strip: {
-        none: true,
-    },
-    target: {
-        android_arm64: {
-            srcs: [
-                "proprietary/vendor/lib64/libpi_feature_util.so",
-            ],
-            shared_libs: [
-                "liblog",
-                "libutils",
-                "libcutils",
-                "libc++",
-                "libc",
-                "libm",
-                "libdl",
-            ],
-        },
-    },
-    compile_multilib: "64",
-    prefer: true,
-    soc_specific: true,
-    ignore_max_page_size: true,
 }
 
 cc_prebuilt_library_shared {

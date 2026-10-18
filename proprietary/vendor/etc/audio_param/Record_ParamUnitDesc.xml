@@ -135,6 +135,14 @@
 		<Param name="sph_in_iir_mic2_enh_dsp" type="ushort_array"/>
 		<Param name="sph_in_iir_mic2_enh_eq_freq" type="double_array"/>
 		<Param name="sph_in_iir_mic2_enh_eq_mag" type="double_array"/>
+		<Param name="sph_in_iir_mic1_pmv_gain" type="double_array"/>
+		<Param name="sph_in_iir_mic2_pmv_gain" type="double_array"/>
+		<Param name="sph_in_iir_mic1_pmv_freq" type="double_array"/>
+		<Param name="sph_in_iir_mic2_pmv_freq" type="double_array"/>
+		<Param name="sph_in_iir_mic1_pmv_type" type="ushort_array"/>
+		<Param name="sph_in_iir_mic2_pmv_type" type="ushort_array"/>
+		<Param name="sph_in_iir_mic1_pmv_qfactor" type="double_array"/>
+		<Param name="sph_in_iir_mic2_pmv_qfactor" type="double_array"/>
 		<Param name="sph_in_parameter" type="double_array"/>
 		<Param name="record_mode_para_ext" type="uint_array"/>
 	</ParamUnit>

@@ -999,6 +999,17 @@
         carrier config files can be loaded from eAP remote file system.
         use this to specify eAP carrier files path template.
         For eAP project, the recommended value is /mnt/remotefs/lbs/carrier/agps_profiles_conf2_carrier_%s.xml
+
+    force_enable_other_satellite
+        use additional satellite in NI location requset, even network did not request this.
+        #define GNSS_ID_BITMAP_NONE     0x00
+        #define GNSS_ID_BITMAP_GPS      0x8000  /* gps     (0) */
+        #define GNSS_ID_BITMAP_SBAS     0x4000  /* sbas    (1) */
+        #define GNSS_ID_BITMAP_QZSS     0x2000  /* qzss    (2) */
+        #define GNSS_ID_BITMAP_GALILEO  0x1000  /* galileo (3) */
+        #define GNSS_ID_BITMAP_GLONASS  0x0800  /* glonass (4) */
+        #define GNSS_ID_BITMAP_BDS      0x0400  /* bds     (5) */
+        #define GNSS_ID_BITMAP_NAVIC    0x0200  /* navic   (6) */
   -->
   <up_setting
     ca_enable="true"
