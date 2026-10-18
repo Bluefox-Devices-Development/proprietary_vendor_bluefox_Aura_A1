@@ -629,7 +629,6 @@ PRODUCT_PACKAGES += \
     android.hardware.renderscript@1.0-impl \
     android.hardware.sensors@2.X-subhal-mediatek \
     android.hardware.soundtrigger3-impl \
-    audio.bluetooth.default \
     audio.primary.mediatek \
     audio.r_submix.default \
     audio.r_submix.mediatek \
@@ -695,6 +694,7 @@ PRODUCT_PACKAGES += \
     libasn1c_core \
     libasn1c_mapi \
     libasn1c_mdmi \
+    libaudio_aidl_conversion_common_ndk_prebuilt \
     libaudio_param_parser-vnd \
     libaudiocompensationfilter_vendor \
     libaudiocompensationfilterc \
@@ -712,8 +712,6 @@ PRODUCT_PACKAGES += \
     libawinic_mtk_aurisys \
     libbessound_hd_mtk_vendor \
     libblisrc32_vendor \
-    libbluetooth_audio_session \
-    libbluetooth_audio_session_aidl \
     libbluetooth_audio_session_aidl_displayone \
     libbluetooth_audio_session_aidl_displaytwo \
     libbluetooth_audio_session_aidl_mtk \
@@ -765,7 +763,7 @@ PRODUCT_PACKAGES += \
     libfgauge_gm30 \
     libfile_op \
     libforkexecwrap \
-    libformatter \
+    libformatter_mtk \
     libged \
     libgpu_aux \
     libgpud \
@@ -919,6 +917,7 @@ PRODUCT_PACKAGES += \
     libtflite_mtk \
     libthhclient \
     libtinycompress \
+    libtinyxml2_mtk \
     libtms_log_record \
     libtranslator_mapi_v3.0 \
     libtranslator_mdmi_v2.8.2 \
@@ -1264,25 +1263,32 @@ PRODUCT_PACKAGES += \
     s5k4h7_mipi_raw_IdxMgr \
     s5khp3_mipi_raw_IdxMgr \
     s5kjn1sq03_mipi_raw_IdxMgr \
-    libaecsw \
     libaecsw_mtk \
-    libagc1sw \
+    libaecsw_prebuilt \
     libagc1sw_mtk \
-    libagc2sw \
+    libagc1sw_prebuilt \
     libagc2sw_mtk \
-    libbassboostsw \
-    libenvreverbsw \
-    libequalizersw \
-    libextensioneffect \
-    libnssw \
+    libagc2sw_prebuilt \
+    libbassboostsw_prebuilt \
+    libbundleaidl_prebuilt \
+    libdownmixaidl_prebuilt \
+    libdynamicsprocessingaidl_prebuilt \
+    libenvreverbsw_prebuilt \
+    libequalizersw_prebuilt \
+    libextensioneffect_prebuilt \
+    libhapticgeneratoraidl_prebuilt \
+    libloudnessenhanceraidl_prebuilt \
     libnssw_mtk \
-    libpreprocessingaidl \
+    libnssw_prebuilt \
     libpreprocessingaidl_mtk \
-    libpresetreverbsw \
+    libpreprocessingaidl_prebuilt \
+    libpresetreverbsw_prebuilt \
+    libreverbaidl_prebuilt \
     libspatializer \
     libspatializeraidl \
-    libvirtualizersw \
-    libvolumesw \
+    libvirtualizersw_prebuilt \
+    libvisualizeraidl_prebuilt \
+    libvolumesw_prebuilt \
     tms-cos-dl-common \
     tms-cos-dl-ree \
     tms-utils \
@@ -1295,8 +1301,6 @@ PRODUCT_PACKAGES += \
     vendor.mediatek.hardware.apuware.utils@2.0 \
     vendor.mediatek.hardware.atci-V1-ndk \
     vendor.mediatek.hardware.audio@6.1 \
-    vendor.mediatek.hardware.bluetooth.audio@2.1 \
-    vendor.mediatek.hardware.bluetooth.audio@2.2 \
     vendor.mediatek.hardware.camera.atms-V1-ndk \
     vendor.mediatek.hardware.camera.bgservice-V1-ndk \
     vendor.mediatek.hardware.camera.ccap@1.0 \
@@ -1322,7 +1326,7 @@ PRODUCT_PACKAGES += \
     vendor.mediatek.hardware.mmlpq-V3-ndk \
     vendor.mediatek.hardware.mmlpq-V5-ndk \
     vendor.mediatek.hardware.mms-V1-ndk \
-    vendor.mediatek.hardware.mtkpower-V2-ndk-vendorcompat \
+    vendor.mediatek.hardware.mtkpower-V2-ndk_prebuilt \
     vendor.mediatek.hardware.mtkpower-V3-ndk \
     vendor.mediatek.hardware.mtkpower_applist-V3-ndk \
     vendor.mediatek.hardware.mtkradioex.assist-V2-ndk \

@@ -272,7 +272,7 @@ cc_prebuilt_library_shared {
                 "android.hardware.common-V2-ndk",
                 "android.hardware.common.fmq-V1-ndk",
                 "android.hardware.bluetooth.audio-impl-mediatek",
-                "libaudio_aidl_conversion_common_ndk",
+                "libaudio_aidl_conversion_common_ndk_prebuilt",
                 "libbluetooth_audio_session_aidl_mtk",
                 "libstagefright_foundation",
                 "liblog",
@@ -310,7 +310,7 @@ cc_prebuilt_library_shared {
                 "libfmq",
                 "liblog",
                 "libbluetooth_audio_session_aidl_mtk",
-                "vendor.mediatek.hardware.bluetooth.audio-V1-ndk",
+                "vendor.mediatek.hardware.bluetooth.audio-V4-ndk",
                 "vendor.mediatek.hardware.bluetooth.audio@2.1",
                 "vendor.mediatek.hardware.bluetooth.audio@2.2",
                 "libc++",
@@ -354,7 +354,7 @@ cc_prebuilt_library_shared {
                 "vendor.mediatek.hardware.mtkpower@1.0",
                 "vendor.mediatek.hardware.mtkpower@1.1",
                 "vendor.mediatek.hardware.mtkpower@1.2",
-                "vendor.mediatek.hardware.mtkpower-V2-ndk-vendorcompat",
+                "vendor.mediatek.hardware.mtkpower-V2-ndk_prebuilt",
                 "libc++",
                 "libc",
                 "libm",
@@ -577,7 +577,7 @@ cc_prebuilt_library_shared {
             shared_libs: [
                 "android.hardware.audio.effect-V3-ndk",
                 "android.media.audio.common.types-V4-ndk",
-                "libaudio_aidl_conversion_common_ndk",
+                "libaudio_aidl_conversion_common_ndk_prebuilt",
                 "libaudioaidlcommon",
                 "libaudioutils",
                 "libbase",
@@ -588,7 +588,7 @@ cc_prebuilt_library_shared {
                 "libutils",
                 "android.hardware.common-V2-ndk",
                 "android.hardware.common.fmq-V1-ndk",
-                "libtinyxml2-v34",
+                "libtinyxml2_mtk",
                 "libc++",
                 "libc",
                 "libm",
@@ -790,47 +790,8 @@ cc_prebuilt_library_shared {
                 "libutils",
                 "libcutils",
                 "libhardware",
-                "libaudio_aidl_conversion_common_ndk",
+                "libaudio_aidl_conversion_common_ndk_prebuilt",
                 "liblog",
-                "libc++",
-                "libc",
-                "libm",
-                "libdl",
-            ],
-        },
-    },
-    compile_multilib: "64",
-    relative_install_path: "hw",
-    prefer: true,
-    soc_specific: true,
-}
-
-cc_prebuilt_library_shared {
-    name: "audio.bluetooth.default",
-    owner: "bluefox",
-    strip: {
-        none: true,
-    },
-    target: {
-        android_arm64: {
-            srcs: [
-                "proprietary/vendor/lib64/hw/audio.bluetooth.default.so",
-            ],
-            shared_libs: [
-                "android.hardware.bluetooth.audio-V5-ndk",
-                "android.hardware.audio.common-V4-ndk",
-                "libaudioutils",
-                "libbase",
-                "libbinder_ndk",
-                "libbluetooth_audio_session_aidl_mtk",
-                "libcutils",
-                "libfmq",
-                "liblog",
-                "libutils",
-                "android.hardware.bluetooth.audio@2.0",
-                "android.hardware.bluetooth.audio@2.1",
-                "libbluetooth_audio_session",
-                "libhidlbase",
                 "libc++",
                 "libc",
                 "libm",
@@ -865,7 +826,7 @@ cc_prebuilt_library_shared {
                 "libhardware",
                 "libaudioutils",
                 "libtinyalsa",
-                "libtinyxml2-v34",
+                "libtinyxml2_mtk",
                 "libaudiotoolkit_vendor",
                 "libmedia_helper",
                 "libladder",
@@ -880,7 +841,7 @@ cc_prebuilt_library_shared {
                 "libhidlbase",
                 "libhidltransport",
                 "libhwbinder",
-                "vendor.mediatek.hardware.bluetooth.audio-V1-ndk",
+                "vendor.mediatek.hardware.bluetooth.audio-V4-ndk",
                 "android.hardware.bluetooth.audio-V4-ndk-vendorcompat",
                 "android.hardware.audio.common@5.0",
                 "libtinycompress",
@@ -1072,7 +1033,7 @@ cc_prebuilt_library_shared {
                 "libladder",
                 "libcomposer_ext",
                 "libdmabufheap",
-                "libtinyxml2-v34",
+                "libtinyxml2_mtk",
                 "libdpframework",
                 "libged",
                 "libgralloc_extra",
@@ -1441,7 +1402,7 @@ cc_prebuilt_library_shared {
                 "libutils",
                 "libcutils",
                 "libpq_sec",
-                "libtinyxml2-v34",
+                "libtinyxml2_mtk",
                 "vendor.mediatek.hardware.pq_aidl-V7-ndk",
                 "libcomposer_ext",
                 "libui",
@@ -1735,7 +1696,7 @@ cc_prebuilt_library_shared {
             shared_libs: [
                 "android.hardware.bluetooth.audio-V5-ndk",
                 "vendor.mediatek.hardware.bluetooth.audio@2.1",
-                "vendor.mediatek.hardware.bluetooth.audio-V1-ndk",
+                "vendor.mediatek.hardware.bluetooth.audio-V4-ndk",
                 "libbase",
                 "libbluetooth_audio_session_mediatek",
                 "libcutils",
@@ -1776,7 +1737,7 @@ cc_prebuilt_library_shared {
                 "android.hardware.bluetooth.audio-V5-ndk",
                 "vendor.mediatek.hardware.bluetooth.audio@2.1",
                 "vendor.mediatek.hardware.bluetooth.audio@2.2",
-                "vendor.mediatek.hardware.bluetooth.audio-V1-ndk",
+                "vendor.mediatek.hardware.bluetooth.audio-V4-ndk",
                 "libbase",
                 "libbluetooth_audio_session_mediatek",
                 "libcutils",
@@ -2445,7 +2406,7 @@ cc_prebuilt_library_shared {
                 "libutils",
                 "liblog",
                 "libexpat",
-                "libtinyxml2-v34",
+                "libtinyxml2_mtk",
                 "libhidlbase",
                 "libhardware",
                 "libpowerhal",
@@ -2926,6 +2887,37 @@ cc_prebuilt_library_shared {
                 "libcutils",
                 "libasn1c_core",
                 "liblog",
+                "libc++",
+                "libc",
+                "libm",
+                "libdl",
+            ],
+        },
+    },
+    compile_multilib: "64",
+    prefer: true,
+    soc_specific: true,
+}
+
+cc_prebuilt_library_shared {
+    name: "libaudio_aidl_conversion_common_ndk_prebuilt",
+    owner: "bluefox",
+    strip: {
+        none: true,
+    },
+    target: {
+        android_arm64: {
+            srcs: [
+                "proprietary/vendor/lib64/libaudio_aidl_conversion_common_ndk_prebuilt.so",
+            ],
+            shared_libs: [
+                "android.media.audio.common.types-V4-ndk",
+                "android.hardware.audio.common-V4-ndk",
+                "liblog",
+                "libstagefright_foundation",
+                "libutils",
+                "libbase",
+                "libbinder_ndk",
                 "libc++",
                 "libc",
                 "libm",
@@ -3425,77 +3417,6 @@ cc_prebuilt_library_shared {
 }
 
 cc_prebuilt_library_shared {
-    name: "libbluetooth_audio_session",
-    owner: "bluefox",
-    strip: {
-        none: true,
-    },
-    target: {
-        android_arm64: {
-            srcs: [
-                "proprietary/vendor/lib64/libbluetooth_audio_session.so",
-            ],
-            shared_libs: [
-                "android.hardware.audio.common@5.0",
-                "android.hardware.bluetooth.audio@2.0",
-                "android.hardware.bluetooth.audio@2.1",
-                "libbase",
-                "libcutils",
-                "libfmq",
-                "libhidlbase",
-                "liblog",
-                "libutils",
-                "libbluetooth_audio_session_aidl",
-                "libc++",
-                "libc",
-                "libm",
-                "libdl",
-            ],
-        },
-    },
-    compile_multilib: "64",
-    prefer: true,
-    soc_specific: true,
-}
-
-cc_prebuilt_library_shared {
-    name: "libbluetooth_audio_session_aidl",
-    owner: "bluefox",
-    strip: {
-        none: true,
-    },
-    target: {
-        android_arm64: {
-            srcs: [
-                "proprietary/vendor/lib64/libbluetooth_audio_session_aidl.so",
-            ],
-            shared_libs: [
-                "android.hardware.bluetooth.audio-V5-ndk",
-                "libaconfig_storage_read_api_cc",
-                "android.hardware.bluetooth.audio@2.0",
-                "android.hardware.bluetooth.audio@2.1",
-                "libbase",
-                "libcutils",
-                "libbinder_ndk",
-                "libfmq",
-                "liblog",
-                "libhidlbase",
-                "libxml2",
-                "libflatbuffers-cpp",
-                "server_configurable_flags",
-                "libc++",
-                "libc",
-                "libm",
-                "libdl",
-            ],
-        },
-    },
-    compile_multilib: "64",
-    prefer: true,
-    soc_specific: true,
-}
-
-cc_prebuilt_library_shared {
     name: "libbluetooth_audio_session_aidl_displayone",
     owner: "bluefox",
     strip: {
@@ -3516,7 +3437,7 @@ cc_prebuilt_library_shared {
                 "libbinder_ndk",
                 "libfmq",
                 "liblog",
-                "vendor.mediatek.hardware.bluetooth.audio-V1-ndk",
+                "vendor.mediatek.hardware.bluetooth.audio-V4-ndk",
                 "libhidlbase",
                 "libxml2",
                 "libflatbuffers-cpp",
@@ -3554,7 +3475,7 @@ cc_prebuilt_library_shared {
                 "libbinder_ndk",
                 "libfmq",
                 "liblog",
-                "vendor.mediatek.hardware.bluetooth.audio-V1-ndk",
+                "vendor.mediatek.hardware.bluetooth.audio-V4-ndk",
                 "libhidlbase",
                 "libxml2",
                 "libflatbuffers-cpp",
@@ -3592,7 +3513,7 @@ cc_prebuilt_library_shared {
                 "libbinder_ndk",
                 "libfmq",
                 "liblog",
-                "vendor.mediatek.hardware.bluetooth.audio-V1-ndk",
+                "vendor.mediatek.hardware.bluetooth.audio-V4-ndk",
                 "libhidlbase",
                 "libxml2",
                 "libflatbuffers-cpp",
@@ -4377,7 +4298,7 @@ cc_prebuilt_library_shared {
                 "android.hardware.media.c2-V1-ndk",
                 "libbinder_ndk",
                 "libcodec2_aidl",
-                "libformatter",
+                "libformatter_mtk",
                 "libdpframework",
                 "android.hardware.graphics.bufferqueue@2.0",
                 "android.hardware.media.bufferpool2-V2-ndk",
@@ -4439,7 +4360,7 @@ cc_prebuilt_library_shared {
                 "android.hardware.media.c2-V1-ndk",
                 "libbinder_ndk",
                 "libcodec2_aidl",
-                "libformatter",
+                "libformatter_mtk",
                 "libdpframework",
                 "android.hardware.graphics.bufferqueue@2.0",
                 "android.hardware.media.bufferpool2-V2-ndk",
@@ -5132,7 +5053,7 @@ cc_prebuilt_library_shared {
 }
 
 cc_prebuilt_library_shared {
-    name: "libformatter",
+    name: "libformatter_mtk",
     owner: "bluefox",
     strip: {
         none: true,
@@ -5140,7 +5061,7 @@ cc_prebuilt_library_shared {
     target: {
         android_arm64: {
             srcs: [
-                "proprietary/vendor/lib64/libformatter.so",
+                "proprietary/vendor/lib64/libformatter_mtk.so",
             ],
             shared_libs: [
                 "libion_mtk",
@@ -6518,7 +6439,7 @@ cc_prebuilt_library_shared {
                 "libbinder",
                 "libbinder_ndk",
                 "libhardware",
-                "libtinyxml2-v34",
+                "libtinyxml2_mtk",
                 "libc++",
                 "libc",
                 "libm",
@@ -6757,7 +6678,7 @@ cc_prebuilt_library_shared {
                 "libbinder_ndk",
                 "libcutils",
                 "libc",
-                "vendor.mediatek.hardware.mtkpower-V2-ndk-vendorcompat",
+                "vendor.mediatek.hardware.mtkpower-V2-ndk_prebuilt",
                 "vendor.mediatek.hardware.mtkpower@1.0",
                 "vendor.mediatek.hardware.mtkpower@1.1",
                 "vendor.mediatek.hardware.mtkpower@1.2",
@@ -8654,7 +8575,7 @@ cc_prebuilt_library_shared {
                 "libutils",
                 "liblog",
                 "libexpat",
-                "libtinyxml2-v34",
+                "libtinyxml2_mtk",
                 "libhidlbase",
                 "libhardware",
                 "vendor.mediatek.hardware.netdagent@1.0",
@@ -8881,7 +8802,7 @@ cc_prebuilt_library_shared {
                 "libutils",
                 "libcutils",
                 "liblog",
-                "libtinyxml2-v34",
+                "libtinyxml2_mtk",
                 "libc++",
                 "libc",
                 "libm",
@@ -8909,7 +8830,7 @@ cc_prebuilt_library_shared {
                 "libutils",
                 "libcutils",
                 "liblog",
-                "libtinyxml2-v34",
+                "libtinyxml2_mtk",
                 "libc++",
                 "libc",
                 "libm",
@@ -9055,7 +8976,7 @@ cc_prebuilt_library_shared {
                 "libcutils",
                 "libutils",
                 "libtinyalsa",
-                "libtinyxml2-v34",
+                "libtinyxml2_mtk",
                 "liblog",
                 "libnvram",
                 "libcrypto",
@@ -9147,7 +9068,7 @@ cc_prebuilt_library_shared {
                 "liblog",
                 "libhardware",
                 "libhardware_legacy",
-                "libtinyxml2-v34",
+                "libtinyxml2_mtk",
                 "libpqxmlparser",
                 "libc++",
                 "libc",
@@ -9550,6 +9471,31 @@ cc_prebuilt_library_shared {
             shared_libs: [
                 "libcutils",
                 "libutils",
+                "libc++",
+                "libc",
+                "libm",
+                "libdl",
+            ],
+        },
+    },
+    compile_multilib: "64",
+    prefer: true,
+    soc_specific: true,
+}
+
+cc_prebuilt_library_shared {
+    name: "libtinyxml2_mtk",
+    owner: "bluefox",
+    strip: {
+        none: true,
+    },
+    target: {
+        android_arm64: {
+            srcs: [
+                "proprietary/vendor/lib64/libtinyxml2_mtk.so",
+            ],
+            shared_libs: [
+                "liblog",
                 "libc++",
                 "libc",
                 "libm",
@@ -20384,44 +20330,6 @@ cc_prebuilt_library_shared {
 }
 
 cc_prebuilt_library_shared {
-    name: "libaecsw",
-    owner: "bluefox",
-    strip: {
-        none: true,
-    },
-    target: {
-        android_arm64: {
-            srcs: [
-                "proprietary/vendor/lib64/soundfx/libaecsw.so",
-            ],
-            shared_libs: [
-                "android.hardware.audio.effect-V3-ndk",
-                "android.media.audio.common.types-V4-ndk",
-                "libaudio_aidl_conversion_common_ndk",
-                "libaudioaidlcommon",
-                "libaudioutils",
-                "libbase",
-                "libbinder_ndk",
-                "libcutils",
-                "libfmq",
-                "liblog",
-                "libutils",
-                "android.hardware.common-V2-ndk",
-                "android.hardware.common.fmq-V1-ndk",
-                "libc++",
-                "libc",
-                "libm",
-                "libdl",
-            ],
-        },
-    },
-    compile_multilib: "64",
-    relative_install_path: "soundfx",
-    prefer: true,
-    soc_specific: true,
-}
-
-cc_prebuilt_library_shared {
     name: "libaecsw_mtk",
     owner: "bluefox",
     strip: {
@@ -20435,7 +20343,7 @@ cc_prebuilt_library_shared {
             shared_libs: [
                 "android.hardware.audio.effect-V3-ndk",
                 "android.media.audio.common.types-V4-ndk",
-                "libaudio_aidl_conversion_common_ndk",
+                "libaudio_aidl_conversion_common_ndk_prebuilt",
                 "libaudioaidlcommon",
                 "libaudioutils",
                 "libbase",
@@ -20460,7 +20368,7 @@ cc_prebuilt_library_shared {
 }
 
 cc_prebuilt_library_shared {
-    name: "libagc1sw",
+    name: "libaecsw_prebuilt",
     owner: "bluefox",
     strip: {
         none: true,
@@ -20468,12 +20376,12 @@ cc_prebuilt_library_shared {
     target: {
         android_arm64: {
             srcs: [
-                "proprietary/vendor/lib64/soundfx/libagc1sw.so",
+                "proprietary/vendor/lib64/soundfx/libaecsw_prebuilt.so",
             ],
             shared_libs: [
                 "android.hardware.audio.effect-V3-ndk",
                 "android.media.audio.common.types-V4-ndk",
-                "libaudio_aidl_conversion_common_ndk",
+                "libaudio_aidl_conversion_common_ndk_prebuilt",
                 "libaudioaidlcommon",
                 "libaudioutils",
                 "libbase",
@@ -20511,7 +20419,7 @@ cc_prebuilt_library_shared {
             shared_libs: [
                 "android.hardware.audio.effect-V3-ndk",
                 "android.media.audio.common.types-V4-ndk",
-                "libaudio_aidl_conversion_common_ndk",
+                "libaudio_aidl_conversion_common_ndk_prebuilt",
                 "libaudioaidlcommon",
                 "libaudioutils",
                 "libbase",
@@ -20536,7 +20444,7 @@ cc_prebuilt_library_shared {
 }
 
 cc_prebuilt_library_shared {
-    name: "libagc2sw",
+    name: "libagc1sw_prebuilt",
     owner: "bluefox",
     strip: {
         none: true,
@@ -20544,12 +20452,12 @@ cc_prebuilt_library_shared {
     target: {
         android_arm64: {
             srcs: [
-                "proprietary/vendor/lib64/soundfx/libagc2sw.so",
+                "proprietary/vendor/lib64/soundfx/libagc1sw_prebuilt.so",
             ],
             shared_libs: [
                 "android.hardware.audio.effect-V3-ndk",
                 "android.media.audio.common.types-V4-ndk",
-                "libaudio_aidl_conversion_common_ndk",
+                "libaudio_aidl_conversion_common_ndk_prebuilt",
                 "libaudioaidlcommon",
                 "libaudioutils",
                 "libbase",
@@ -20587,7 +20495,7 @@ cc_prebuilt_library_shared {
             shared_libs: [
                 "android.hardware.audio.effect-V3-ndk",
                 "android.media.audio.common.types-V4-ndk",
-                "libaudio_aidl_conversion_common_ndk",
+                "libaudio_aidl_conversion_common_ndk_prebuilt",
                 "libaudioaidlcommon",
                 "libaudioutils",
                 "libbase",
@@ -20612,7 +20520,7 @@ cc_prebuilt_library_shared {
 }
 
 cc_prebuilt_library_shared {
-    name: "libbassboostsw",
+    name: "libagc2sw_prebuilt",
     owner: "bluefox",
     strip: {
         none: true,
@@ -20620,12 +20528,12 @@ cc_prebuilt_library_shared {
     target: {
         android_arm64: {
             srcs: [
-                "proprietary/vendor/lib64/soundfx/libbassboostsw.so",
+                "proprietary/vendor/lib64/soundfx/libagc2sw_prebuilt.so",
             ],
             shared_libs: [
                 "android.hardware.audio.effect-V3-ndk",
                 "android.media.audio.common.types-V4-ndk",
-                "libaudio_aidl_conversion_common_ndk",
+                "libaudio_aidl_conversion_common_ndk_prebuilt",
                 "libaudioaidlcommon",
                 "libaudioutils",
                 "libbase",
@@ -20650,7 +20558,7 @@ cc_prebuilt_library_shared {
 }
 
 cc_prebuilt_library_shared {
-    name: "libenvreverbsw",
+    name: "libbassboostsw_prebuilt",
     owner: "bluefox",
     strip: {
         none: true,
@@ -20658,12 +20566,12 @@ cc_prebuilt_library_shared {
     target: {
         android_arm64: {
             srcs: [
-                "proprietary/vendor/lib64/soundfx/libenvreverbsw.so",
+                "proprietary/vendor/lib64/soundfx/libbassboostsw_prebuilt.so",
             ],
             shared_libs: [
                 "android.hardware.audio.effect-V3-ndk",
                 "android.media.audio.common.types-V4-ndk",
-                "libaudio_aidl_conversion_common_ndk",
+                "libaudio_aidl_conversion_common_ndk_prebuilt",
                 "libaudioaidlcommon",
                 "libaudioutils",
                 "libbase",
@@ -20688,7 +20596,7 @@ cc_prebuilt_library_shared {
 }
 
 cc_prebuilt_library_shared {
-    name: "libequalizersw",
+    name: "libbundleaidl_prebuilt",
     owner: "bluefox",
     strip: {
         none: true,
@@ -20696,12 +20604,89 @@ cc_prebuilt_library_shared {
     target: {
         android_arm64: {
             srcs: [
-                "proprietary/vendor/lib64/soundfx/libequalizersw.so",
+                "proprietary/vendor/lib64/soundfx/libbundleaidl_prebuilt.so",
             ],
             shared_libs: [
                 "android.hardware.audio.effect-V3-ndk",
                 "android.media.audio.common.types-V4-ndk",
-                "libaudio_aidl_conversion_common_ndk",
+                "libaudioaidlcommon",
+                "libbase",
+                "libbinder_ndk",
+                "libcutils",
+                "libfmq",
+                "libutils",
+                "android.hardware.common-V2-ndk",
+                "android.hardware.common.fmq-V1-ndk",
+                "libaudio_aidl_conversion_common_ndk_prebuilt",
+                "libaudioutils",
+                "liblog",
+                "libstagefright_foundation",
+                "libc++",
+                "libc",
+                "libm",
+                "libdl",
+            ],
+        },
+    },
+    compile_multilib: "64",
+    relative_install_path: "soundfx",
+    prefer: true,
+    soc_specific: true,
+}
+
+cc_prebuilt_library_shared {
+    name: "libdownmixaidl_prebuilt",
+    owner: "bluefox",
+    strip: {
+        none: true,
+    },
+    target: {
+        android_arm64: {
+            srcs: [
+                "proprietary/vendor/lib64/soundfx/libdownmixaidl_prebuilt.so",
+            ],
+            shared_libs: [
+                "android.hardware.audio.effect-V3-ndk",
+                "android.media.audio.common.types-V4-ndk",
+                "libaudio_aidl_conversion_common_ndk_prebuilt",
+                "libaudioaidlcommon",
+                "libbase",
+                "libbinder_ndk",
+                "libfmq",
+                "libutils",
+                "android.hardware.common-V2-ndk",
+                "android.hardware.common.fmq-V1-ndk",
+                "libaudioutils",
+                "libcutils",
+                "liblog",
+                "libc++",
+                "libc",
+                "libm",
+                "libdl",
+            ],
+        },
+    },
+    compile_multilib: "64",
+    relative_install_path: "soundfx",
+    prefer: true,
+    soc_specific: true,
+}
+
+cc_prebuilt_library_shared {
+    name: "libdynamicsprocessingaidl_prebuilt",
+    owner: "bluefox",
+    strip: {
+        none: true,
+    },
+    target: {
+        android_arm64: {
+            srcs: [
+                "proprietary/vendor/lib64/soundfx/libdynamicsprocessingaidl_prebuilt.so",
+            ],
+            shared_libs: [
+                "android.hardware.audio.effect-V3-ndk",
+                "android.media.audio.common.types-V4-ndk",
+                "libaudio_aidl_conversion_common_ndk_prebuilt",
                 "libaudioaidlcommon",
                 "libaudioutils",
                 "libbase",
@@ -20726,7 +20711,7 @@ cc_prebuilt_library_shared {
 }
 
 cc_prebuilt_library_shared {
-    name: "libextensioneffect",
+    name: "libenvreverbsw_prebuilt",
     owner: "bluefox",
     strip: {
         none: true,
@@ -20734,12 +20719,12 @@ cc_prebuilt_library_shared {
     target: {
         android_arm64: {
             srcs: [
-                "proprietary/vendor/lib64/soundfx/libextensioneffect.so",
+                "proprietary/vendor/lib64/soundfx/libenvreverbsw_prebuilt.so",
             ],
             shared_libs: [
                 "android.hardware.audio.effect-V3-ndk",
                 "android.media.audio.common.types-V4-ndk",
-                "libaudio_aidl_conversion_common_ndk",
+                "libaudio_aidl_conversion_common_ndk_prebuilt",
                 "libaudioaidlcommon",
                 "libaudioutils",
                 "libbase",
@@ -20764,7 +20749,7 @@ cc_prebuilt_library_shared {
 }
 
 cc_prebuilt_library_shared {
-    name: "libnssw",
+    name: "libequalizersw_prebuilt",
     owner: "bluefox",
     strip: {
         none: true,
@@ -20772,12 +20757,12 @@ cc_prebuilt_library_shared {
     target: {
         android_arm64: {
             srcs: [
-                "proprietary/vendor/lib64/soundfx/libnssw.so",
+                "proprietary/vendor/lib64/soundfx/libequalizersw_prebuilt.so",
             ],
             shared_libs: [
                 "android.hardware.audio.effect-V3-ndk",
                 "android.media.audio.common.types-V4-ndk",
-                "libaudio_aidl_conversion_common_ndk",
+                "libaudio_aidl_conversion_common_ndk_prebuilt",
                 "libaudioaidlcommon",
                 "libaudioutils",
                 "libbase",
@@ -20788,6 +20773,121 @@ cc_prebuilt_library_shared {
                 "libutils",
                 "android.hardware.common-V2-ndk",
                 "android.hardware.common.fmq-V1-ndk",
+                "libc++",
+                "libc",
+                "libm",
+                "libdl",
+            ],
+        },
+    },
+    compile_multilib: "64",
+    relative_install_path: "soundfx",
+    prefer: true,
+    soc_specific: true,
+}
+
+cc_prebuilt_library_shared {
+    name: "libextensioneffect_prebuilt",
+    owner: "bluefox",
+    strip: {
+        none: true,
+    },
+    target: {
+        android_arm64: {
+            srcs: [
+                "proprietary/vendor/lib64/soundfx/libextensioneffect_prebuilt.so",
+            ],
+            shared_libs: [
+                "android.hardware.audio.effect-V3-ndk",
+                "android.media.audio.common.types-V4-ndk",
+                "libaudio_aidl_conversion_common_ndk_prebuilt",
+                "libaudioaidlcommon",
+                "libaudioutils",
+                "libbase",
+                "libbinder_ndk",
+                "libcutils",
+                "libfmq",
+                "liblog",
+                "libutils",
+                "android.hardware.common-V2-ndk",
+                "android.hardware.common.fmq-V1-ndk",
+                "libc++",
+                "libc",
+                "libm",
+                "libdl",
+            ],
+        },
+    },
+    compile_multilib: "64",
+    relative_install_path: "soundfx",
+    prefer: true,
+    soc_specific: true,
+}
+
+cc_prebuilt_library_shared {
+    name: "libhapticgeneratoraidl_prebuilt",
+    owner: "bluefox",
+    strip: {
+        none: true,
+    },
+    target: {
+        android_arm64: {
+            srcs: [
+                "proprietary/vendor/lib64/soundfx/libhapticgeneratoraidl_prebuilt.so",
+            ],
+            shared_libs: [
+                "libvibratorutils",
+                "android.hardware.audio.effect-V3-ndk",
+                "android.media.audio.common.types-V4-ndk",
+                "libaudio_aidl_conversion_common_ndk_prebuilt",
+                "libaudioaidlcommon",
+                "libaudioutils",
+                "libbase",
+                "libbinder_ndk",
+                "libcutils",
+                "libfmq",
+                "liblog",
+                "libutils",
+                "android.hardware.common-V2-ndk",
+                "android.hardware.common.fmq-V1-ndk",
+                "libc++",
+                "libc",
+                "libm",
+                "libdl",
+            ],
+        },
+    },
+    compile_multilib: "64",
+    relative_install_path: "soundfx",
+    prefer: true,
+    soc_specific: true,
+}
+
+cc_prebuilt_library_shared {
+    name: "libloudnessenhanceraidl_prebuilt",
+    owner: "bluefox",
+    strip: {
+        none: true,
+    },
+    target: {
+        android_arm64: {
+            srcs: [
+                "proprietary/vendor/lib64/soundfx/libloudnessenhanceraidl_prebuilt.so",
+            ],
+            shared_libs: [
+                "android.hardware.audio.effect-V3-ndk",
+                "android.media.audio.common.types-V4-ndk",
+                "libaudio_aidl_conversion_common_ndk_prebuilt",
+                "libaudioaidlcommon",
+                "libbase",
+                "libbinder_ndk",
+                "libfmq",
+                "libutils",
+                "android.hardware.common-V2-ndk",
+                "android.hardware.common.fmq-V1-ndk",
+                "libaudioutils",
+                "libcutils",
+                "liblog",
                 "libc++",
                 "libc",
                 "libm",
@@ -20815,7 +20915,7 @@ cc_prebuilt_library_shared {
             shared_libs: [
                 "android.hardware.audio.effect-V3-ndk",
                 "android.media.audio.common.types-V4-ndk",
-                "libaudio_aidl_conversion_common_ndk",
+                "libaudio_aidl_conversion_common_ndk_prebuilt",
                 "libaudioaidlcommon",
                 "libaudioutils",
                 "libbase",
@@ -20840,7 +20940,7 @@ cc_prebuilt_library_shared {
 }
 
 cc_prebuilt_library_shared {
-    name: "libpreprocessingaidl",
+    name: "libnssw_prebuilt",
     owner: "bluefox",
     strip: {
         none: true,
@@ -20848,22 +20948,22 @@ cc_prebuilt_library_shared {
     target: {
         android_arm64: {
             srcs: [
-                "proprietary/vendor/lib64/soundfx/libpreprocessingaidl.so",
+                "proprietary/vendor/lib64/soundfx/libnssw_prebuilt.so",
             ],
             shared_libs: [
                 "android.hardware.audio.effect-V3-ndk",
                 "android.media.audio.common.types-V4-ndk",
-                "libaudio_aidl_conversion_common_ndk",
+                "libaudio_aidl_conversion_common_ndk_prebuilt",
                 "libaudioaidlcommon",
+                "libaudioutils",
                 "libbase",
                 "libbinder_ndk",
                 "libcutils",
                 "libfmq",
-                "android.hardware.common-V2-ndk",
-                "android.hardware.common.fmq-V1-ndk",
-                "libaudioutils",
                 "liblog",
                 "libutils",
+                "android.hardware.common-V2-ndk",
+                "android.hardware.common.fmq-V1-ndk",
                 "libc++",
                 "libc",
                 "libm",
@@ -20891,7 +20991,7 @@ cc_prebuilt_library_shared {
             shared_libs: [
                 "android.hardware.audio.effect-V3-ndk",
                 "android.media.audio.common.types-V4-ndk",
-                "libaudio_aidl_conversion_common_ndk",
+                "libaudio_aidl_conversion_common_ndk_prebuilt",
                 "libaudioaidlcommon",
                 "libbase",
                 "libbinder_ndk",
@@ -20916,7 +21016,7 @@ cc_prebuilt_library_shared {
 }
 
 cc_prebuilt_library_shared {
-    name: "libpresetreverbsw",
+    name: "libpreprocessingaidl_prebuilt",
     owner: "bluefox",
     strip: {
         none: true,
@@ -20924,12 +21024,50 @@ cc_prebuilt_library_shared {
     target: {
         android_arm64: {
             srcs: [
-                "proprietary/vendor/lib64/soundfx/libpresetreverbsw.so",
+                "proprietary/vendor/lib64/soundfx/libpreprocessingaidl_prebuilt.so",
             ],
             shared_libs: [
                 "android.hardware.audio.effect-V3-ndk",
                 "android.media.audio.common.types-V4-ndk",
-                "libaudio_aidl_conversion_common_ndk",
+                "libaudio_aidl_conversion_common_ndk_prebuilt",
+                "libaudioaidlcommon",
+                "libbase",
+                "libbinder_ndk",
+                "libcutils",
+                "libfmq",
+                "android.hardware.common-V2-ndk",
+                "android.hardware.common.fmq-V1-ndk",
+                "libaudioutils",
+                "liblog",
+                "libutils",
+                "libc++",
+                "libc",
+                "libm",
+                "libdl",
+            ],
+        },
+    },
+    compile_multilib: "64",
+    relative_install_path: "soundfx",
+    prefer: true,
+    soc_specific: true,
+}
+
+cc_prebuilt_library_shared {
+    name: "libpresetreverbsw_prebuilt",
+    owner: "bluefox",
+    strip: {
+        none: true,
+    },
+    target: {
+        android_arm64: {
+            srcs: [
+                "proprietary/vendor/lib64/soundfx/libpresetreverbsw_prebuilt.so",
+            ],
+            shared_libs: [
+                "android.hardware.audio.effect-V3-ndk",
+                "android.media.audio.common.types-V4-ndk",
+                "libaudio_aidl_conversion_common_ndk_prebuilt",
                 "libaudioaidlcommon",
                 "libaudioutils",
                 "libbase",
@@ -20940,6 +21078,44 @@ cc_prebuilt_library_shared {
                 "libutils",
                 "android.hardware.common-V2-ndk",
                 "android.hardware.common.fmq-V1-ndk",
+                "libc++",
+                "libc",
+                "libm",
+                "libdl",
+            ],
+        },
+    },
+    compile_multilib: "64",
+    relative_install_path: "soundfx",
+    prefer: true,
+    soc_specific: true,
+}
+
+cc_prebuilt_library_shared {
+    name: "libreverbaidl_prebuilt",
+    owner: "bluefox",
+    strip: {
+        none: true,
+    },
+    target: {
+        android_arm64: {
+            srcs: [
+                "proprietary/vendor/lib64/soundfx/libreverbaidl_prebuilt.so",
+            ],
+            shared_libs: [
+                "android.hardware.audio.effect-V3-ndk",
+                "android.media.audio.common.types-V4-ndk",
+                "libaudio_aidl_conversion_common_ndk_prebuilt",
+                "libaudioaidlcommon",
+                "libbinder_ndk",
+                "libfmq",
+                "libutils",
+                "android.hardware.common-V2-ndk",
+                "android.hardware.common.fmq-V1-ndk",
+                "libaudioutils",
+                "libbase",
+                "libcutils",
+                "liblog",
                 "libc++",
                 "libc",
                 "libm",
@@ -20995,7 +21171,7 @@ cc_prebuilt_library_shared {
             shared_libs: [
                 "android.hardware.audio.effect-V3-ndk",
                 "android.media.audio.common.types-V4-ndk",
-                "libaudio_aidl_conversion_common_ndk",
+                "libaudio_aidl_conversion_common_ndk_prebuilt",
                 "libaudioaidlcommon",
                 "libaudioutils",
                 "libbase",
@@ -21020,7 +21196,7 @@ cc_prebuilt_library_shared {
 }
 
 cc_prebuilt_library_shared {
-    name: "libvirtualizersw",
+    name: "libvirtualizersw_prebuilt",
     owner: "bluefox",
     strip: {
         none: true,
@@ -21028,12 +21204,12 @@ cc_prebuilt_library_shared {
     target: {
         android_arm64: {
             srcs: [
-                "proprietary/vendor/lib64/soundfx/libvirtualizersw.so",
+                "proprietary/vendor/lib64/soundfx/libvirtualizersw_prebuilt.so",
             ],
             shared_libs: [
                 "android.hardware.audio.effect-V3-ndk",
                 "android.media.audio.common.types-V4-ndk",
-                "libaudio_aidl_conversion_common_ndk",
+                "libaudio_aidl_conversion_common_ndk_prebuilt",
                 "libaudioaidlcommon",
                 "libaudioutils",
                 "libbase",
@@ -21058,7 +21234,7 @@ cc_prebuilt_library_shared {
 }
 
 cc_prebuilt_library_shared {
-    name: "libvolumesw",
+    name: "libvisualizeraidl_prebuilt",
     owner: "bluefox",
     strip: {
         none: true,
@@ -21066,12 +21242,50 @@ cc_prebuilt_library_shared {
     target: {
         android_arm64: {
             srcs: [
-                "proprietary/vendor/lib64/soundfx/libvolumesw.so",
+                "proprietary/vendor/lib64/soundfx/libvisualizeraidl_prebuilt.so",
             ],
             shared_libs: [
                 "android.hardware.audio.effect-V3-ndk",
                 "android.media.audio.common.types-V4-ndk",
-                "libaudio_aidl_conversion_common_ndk",
+                "libaudio_aidl_conversion_common_ndk_prebuilt",
+                "libaudioaidlcommon",
+                "libaudioutils",
+                "libbase",
+                "libbinder_ndk",
+                "libfmq",
+                "liblog",
+                "libutils",
+                "android.hardware.common-V2-ndk",
+                "android.hardware.common.fmq-V1-ndk",
+                "libcutils",
+                "libc++",
+                "libc",
+                "libm",
+                "libdl",
+            ],
+        },
+    },
+    compile_multilib: "64",
+    relative_install_path: "soundfx",
+    prefer: true,
+    soc_specific: true,
+}
+
+cc_prebuilt_library_shared {
+    name: "libvolumesw_prebuilt",
+    owner: "bluefox",
+    strip: {
+        none: true,
+    },
+    target: {
+        android_arm64: {
+            srcs: [
+                "proprietary/vendor/lib64/soundfx/libvolumesw_prebuilt.so",
+            ],
+            shared_libs: [
+                "android.hardware.audio.effect-V3-ndk",
+                "android.media.audio.common.types-V4-ndk",
+                "libaudio_aidl_conversion_common_ndk_prebuilt",
                 "libaudioaidlcommon",
                 "libaudioutils",
                 "libbase",
@@ -21421,67 +21635,6 @@ cc_prebuilt_library_shared {
                 "android.hardware.audio.common@6.0",
                 "android.hardware.audio.effect@6.0",
                 "android.hardware.audio@6.0",
-                "android.hidl.safe_union@1.0",
-                "libhidlbase",
-                "liblog",
-                "libutils",
-                "libcutils",
-                "libc++",
-                "libc",
-                "libm",
-                "libdl",
-            ],
-        },
-    },
-    compile_multilib: "64",
-    prefer: true,
-    soc_specific: true,
-}
-
-cc_prebuilt_library_shared {
-    name: "vendor.mediatek.hardware.bluetooth.audio@2.1",
-    owner: "bluefox",
-    strip: {
-        none: true,
-    },
-    target: {
-        android_arm64: {
-            srcs: [
-                "proprietary/vendor/lib64/vendor.mediatek.hardware.bluetooth.audio@2.1.so",
-            ],
-            shared_libs: [
-                "android.hardware.audio.common@5.0",
-                "android.hidl.safe_union@1.0",
-                "libhidlbase",
-                "liblog",
-                "libutils",
-                "libcutils",
-                "libc++",
-                "libc",
-                "libm",
-                "libdl",
-            ],
-        },
-    },
-    compile_multilib: "64",
-    prefer: true,
-    soc_specific: true,
-}
-
-cc_prebuilt_library_shared {
-    name: "vendor.mediatek.hardware.bluetooth.audio@2.2",
-    owner: "bluefox",
-    strip: {
-        none: true,
-    },
-    target: {
-        android_arm64: {
-            srcs: [
-                "proprietary/vendor/lib64/vendor.mediatek.hardware.bluetooth.audio@2.2.so",
-            ],
-            shared_libs: [
-                "android.hardware.audio.common@5.0",
-                "vendor.mediatek.hardware.bluetooth.audio@2.1",
                 "android.hidl.safe_union@1.0",
                 "libhidlbase",
                 "liblog",
@@ -22160,8 +22313,7 @@ cc_prebuilt_library_shared {
 }
 
 cc_prebuilt_library_shared {
-    name: "vendor.mediatek.hardware.mtkpower-V2-ndk-vendorcompat",
-    stem: "vendor.mediatek.hardware.mtkpower-V2-ndk",
+    name: "vendor.mediatek.hardware.mtkpower-V2-ndk_prebuilt",
     owner: "bluefox",
     strip: {
         none: true,
@@ -22169,7 +22321,7 @@ cc_prebuilt_library_shared {
     target: {
         android_arm64: {
             srcs: [
-                "proprietary/vendor/lib64/vendor.mediatek.hardware.mtkpower-V2-ndk.so",
+                "proprietary/vendor/lib64/vendor.mediatek.hardware.mtkpower-V2-ndk_prebuilt.so",
             ],
             shared_libs: [
                 "libbinder_ndk",
@@ -23560,6 +23712,7 @@ cc_prebuilt_library_shared {
                 "proprietary/system_ext/lib64/libsink-mtk.so",
             ],
             shared_libs: [
+                "libaudioclient_shim",
                 "libbinder",
                 "libcutils",
                 "libgui",
@@ -24667,7 +24820,7 @@ cc_prebuilt_binary {
                 "android.hardware.common-V2-ndk",
                 "android.hardware.common.fmq-V1-ndk",
                 "android.hardware.audio.core-impl-mediatek",
-                "libaudio_aidl_conversion_common_ndk",
+                "libaudio_aidl_conversion_common_ndk_prebuilt",
                 "libbluetooth_audio_session_aidl_mtk",
                 "libmedia_helper",
                 "libstagefright_foundation",

@@ -31,22 +31,22 @@
         <library name="aecsw" path="libaecsw_mtk.so"/>
         <library name="agc1sw" path="libagc1sw_mtk.so"/>
         <library name="agc2sw" path="libagc2sw_mtk.so"/>
-        <library name="bassboostsw" path="libbassboostsw.so"/>
-        <library name="bundle" path="libbundleaidl.so"/>
-        <library name="downmix" path="libdownmixaidl.so"/>
-        <library name="dynamics_processing" path="libdynamicsprocessingaidl.so"/>
-        <library name="equalizersw" path="libequalizersw.so"/>
-        <library name="haptic_generator" path="libhapticgeneratoraidl.so"/>
-        <library name="loudness_enhancer" path="libloudnessenhanceraidl.so"/>
+        <library name="bassboostsw" path="libbassboostsw_prebuilt.so"/>
+        <library name="bundle" path="libbundleaidl_prebuilt.so"/>
+        <library name="downmix" path="libdownmixaidl_prebuilt.so"/>
+        <library name="dynamics_processing" path="libdynamicsprocessingaidl_prebuilt.so"/>
+        <library name="equalizersw" path="libequalizersw_prebuilt.so"/>
+        <library name="haptic_generator" path="libhapticgeneratoraidl_prebuilt.so"/>
+        <library name="loudness_enhancer" path="libloudnessenhanceraidl_prebuilt.so"/>
         <library name="nssw" path="libnssw_mtk.so"/>
-        <library name="env_reverbsw" path="libenvreverbsw.so"/>
+        <library name="env_reverbsw" path="libenvreverbsw_prebuilt.so"/>
         <library name="pre_processing" path="libpreprocessingaidl_mtk.so"/>
-        <library name="preset_reverbsw" path="libpresetreverbsw.so"/>
-        <library name="reverb" path="libreverbaidl.so"/>
-        <library name="virtualizersw" path="libvirtualizersw.so"/>
-        <library name="visualizer" path="libvisualizeraidl.so"/>
-        <library name="volumesw" path="libvolumesw.so"/>
-        <library name="extensioneffect" path="libextensioneffect.so"/>
+        <library name="preset_reverbsw" path="libpresetreverbsw_prebuilt.so"/>
+        <library name="reverb" path="libreverbaidl_prebuilt.so"/>
+        <library name="virtualizersw" path="libvirtualizersw_prebuilt.so"/>
+        <library name="visualizer" path="libvisualizeraidl_prebuilt.so"/>
+        <library name="volumesw" path="libvolumesw_prebuilt.so"/>
+        <library name="extensioneffect" path="libextensioneffect_prebuilt.so"/>
         <library name="spatializersw" path="libspatializeraidl.so"/>
     </libraries>
 
