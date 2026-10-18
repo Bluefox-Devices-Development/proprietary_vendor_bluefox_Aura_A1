@@ -24201,15 +24201,6 @@ prebuilt_etc_xml {
 }
 
 prebuilt_etc_xml {
-    name: "android.hardware.drm-service.clearkey.aura.xml",
-    owner: "bluefox",
-    src: "proprietary/vendor/etc/vintf/manifest/android.hardware.drm-service.clearkey.aura.xml",
-    filename_from_src: true,
-    sub_dir: "vintf/manifest",
-    soc_specific: true,
-}
-
-prebuilt_etc_xml {
     name: "android.hardware.gatekeeper-service.beanpod.xml",
     owner: "bluefox",
     src: "proprietary/vendor/etc/vintf/manifest/android.hardware.gatekeeper-service.beanpod.xml",
@@ -25064,38 +25055,6 @@ cc_prebuilt_binary {
                 "libhardware",
                 "liblog",
                 "libcutils",
-                "libc++",
-                "libc",
-                "libm",
-                "libdl",
-            ],
-        },
-    },
-    compile_multilib: "64",
-    strip: {
-        none: true,
-    },
-    prefer: true,
-    relative_install_path: "hw",
-    soc_specific: true,
-}
-
-cc_prebuilt_binary {
-    name: "android.hardware.drm-service.clearkey-stock",
-    owner: "bluefox",
-    target: {
-        android_arm64: {
-            srcs: [
-                "proprietary/vendor/bin/hw/android.hardware.drm-service.clearkey-stock",
-            ],
-            shared_libs: [
-                "android.hardware.drm-V1-ndk",
-                "libbase",
-                "libbinder_ndk",
-                "libcrypto",
-                "liblog",
-                "libprotobuf-cpp-lite-21.12-vendorcompat",
-                "libutils",
                 "libc++",
                 "libc",
                 "libm",

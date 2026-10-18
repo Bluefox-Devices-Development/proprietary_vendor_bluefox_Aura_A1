@@ -209,7 +209,6 @@ PRODUCT_COPY_FILES += \
     vendor/bluefox/Aura_A1/proprietary/vendor/etc/init.insmod.mt6789.cfg:$(TARGET_COPY_OUT_VENDOR)/etc/init.insmod.mt6789.cfg \
     vendor/bluefox/Aura_A1/proprietary/vendor/etc/init.insmod.touch.cfg:$(TARGET_COPY_OUT_VENDOR)/etc/init.insmod.touch.cfg \
     vendor/bluefox/Aura_A1/proprietary/vendor/etc/init/android.hardware.audio.service-aidl.mediatek.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/android.hardware.audio.service-aidl.mediatek.rc \
-    vendor/bluefox/Aura_A1/proprietary/vendor/etc/init/android.hardware.drm-service.clearkey-stock.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/android.hardware.drm-service.clearkey-stock.rc \
     vendor/bluefox/Aura_A1/proprietary/vendor/etc/init/android.hardware.gatekeeper-service.beanpod.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/android.hardware.gatekeeper-service.beanpod.rc \
     vendor/bluefox/Aura_A1/proprietary/vendor/etc/init/android.hardware.gnss-service.mediatek.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/android.hardware.gnss-service.mediatek.rc \
     vendor/bluefox/Aura_A1/proprietary/vendor/etc/init/android.hardware.graphics.allocator-V2-service-mediatek.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/android.hardware.graphics.allocator-V2-service-mediatek.rc \
@@ -1400,7 +1399,6 @@ PRODUCT_PACKAGES += \
     CommandService.xml \
     android.hardware.audio.effect.service-aidl.xml \
     android.hardware.audio.service-aidl.aura.xml \
-    android.hardware.drm-service.clearkey.aura.xml \
     android.hardware.gatekeeper-service.beanpod.xml \
     android.hardware.identity-service.beanpod.xml \
     android.hardware.security.keymint-service.beanpod.xml \
@@ -1449,7 +1447,6 @@ PRODUCT_PACKAGES += \
     gsm0710muxd \
     android.hardware.audio.service-aidl.mediatek \
     android.hardware.biometrics.fingerprint-service \
-    android.hardware.drm-service.clearkey-stock \
     android.hardware.gatekeeper-service.beanpod \
     android.hardware.gnss-service.mediatek \
     android.hardware.graphics.composer@3.4-service \
