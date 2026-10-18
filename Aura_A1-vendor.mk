@@ -1273,23 +1273,17 @@ PRODUCT_PACKAGES += \
     libagc2sw \
     libagc2sw_mtk \
     libbassboostsw \
-    libbundleaidl \
-    libdownmixaidl \
-    libdynamicsprocessingaidl \
     libenvreverbsw \
     libequalizersw \
     libextensioneffect \
-    libloudnessenhanceraidl \
     libnssw \
     libnssw_mtk \
     libpreprocessingaidl \
     libpreprocessingaidl_mtk \
     libpresetreverbsw \
-    libreverbaidl \
     libspatializer \
     libspatializeraidl \
     libvirtualizersw \
-    libvisualizeraidl \
     libvolumesw \
     tms-cos-dl-common \
     tms-cos-dl-ree \
