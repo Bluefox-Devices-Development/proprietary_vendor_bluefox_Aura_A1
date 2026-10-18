@@ -10520,7 +10520,7 @@ cc_prebuilt_library_shared {
 }
 
 cc_prebuilt_library_shared {
-    name: "libwifi-hal",
+    name: "libwifi-hal-mtk",
     owner: "bluefox",
     strip: {
         none: true,
@@ -10528,7 +10528,7 @@ cc_prebuilt_library_shared {
     target: {
         android_arm64: {
             srcs: [
-                "proprietary/vendor/lib64/libwifi-hal.so",
+                "proprietary/vendor/lib64/libwifi-hal-mtk.so",
             ],
             shared_libs: [
                 "libbase",
@@ -10544,6 +10544,7 @@ cc_prebuilt_library_shared {
         },
     },
     compile_multilib: "64",
+    check_elf_files: false,
     prefer: true,
     soc_specific: true,
 }
@@ -23987,15 +23988,6 @@ prebuilt_etc_xml {
 }
 
 prebuilt_etc_xml {
-    name: "android.hardware.wifi-service.aura.xml",
-    owner: "bluefox",
-    src: "proprietary/vendor/etc/vintf/manifest/android.hardware.wifi-service.aura.xml",
-    filename_from_src: true,
-    sub_dir: "vintf/manifest",
-    soc_specific: true,
-}
-
-prebuilt_etc_xml {
     name: "android.hardware.wifi.hostapd.aura.xml",
     owner: "bluefox",
     src: "proprietary/vendor/etc/vintf/manifest/android.hardware.wifi.hostapd.aura.xml",
@@ -25140,41 +25132,6 @@ cc_prebuilt_binary {
                 "android.hardware.vibrator-V2-ndk",
                 "libhardware",
                 "libhardware_legacy",
-                "libc++",
-                "libc",
-                "libm",
-                "libdl",
-            ],
-        },
-    },
-    compile_multilib: "64",
-    strip: {
-        none: true,
-    },
-    prefer: true,
-    relative_install_path: "hw",
-    soc_specific: true,
-}
-
-cc_prebuilt_binary {
-    name: "android.hardware.wifi-service-lazy-stock",
-    owner: "bluefox",
-    target: {
-        android_arm64: {
-            srcs: [
-                "proprietary/vendor/bin/hw/android.hardware.wifi-service-lazy-stock",
-            ],
-            shared_libs: [
-                "libbase",
-                "libbinder_ndk",
-                "libcutils",
-                "liblog",
-                "libnl",
-                "libutils",
-                "libwifi-hal",
-                "libwifi-system-iface",
-                "libxml2",
-                "android.hardware.wifi-V3-ndk",
                 "libc++",
                 "libc",
                 "libm",
