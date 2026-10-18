@@ -271,7 +271,6 @@ PRODUCT_COPY_FILES += \
     vendor/bluefox/Aura_A1/proprietary/vendor/etc/init/init.wod.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/init.wod.rc \
     vendor/bluefox/Aura_A1/proprietary/vendor/etc/init/init.xcap.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/init.xcap.rc \
     vendor/bluefox/Aura_A1/proprietary/vendor/etc/init/ipsec_mon.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/ipsec_mon.rc \
-    vendor/bluefox/Aura_A1/proprietary/vendor/etc/init/lights-mtk-default.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/lights-mtk-default.rc \
     vendor/bluefox/Aura_A1/proprietary/vendor/etc/init/microtrust.bp_kmsetkey_ca.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/microtrust.bp_kmsetkey_ca.rc \
     vendor/bluefox/Aura_A1/proprietary/vendor/etc/init/microtrust.init_thh.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/microtrust.init_thh.rc \
     vendor/bluefox/Aura_A1/proprietary/vendor/etc/init/microtrust.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/microtrust.rc \
@@ -1334,7 +1333,6 @@ PRODUCT_PACKAGES += \
     vendor.mediatek.hardware.mmlpq-V3-ndk \
     vendor.mediatek.hardware.mmlpq-V5-ndk \
     vendor.mediatek.hardware.mms-V1-ndk \
-    vendor.mediatek.hardware.mtklight-V1-ndk \
     vendor.mediatek.hardware.mtkpower-V1-ndk \
     vendor.mediatek.hardware.mtkpower-V2-ndk \
     vendor.mediatek.hardware.mtkpower-V3-ndk \
@@ -1415,7 +1413,6 @@ PRODUCT_PACKAGES += \
     fingerprint-default.aura.xml \
     gnss-default.aura.xml \
     gnss-mtk.xml \
-    lights-mtk-default.xml \
     manifest_allocator.xml \
     manifest_cameraprovider.xml \
     manifest_hwcomposer.xml \
@@ -1457,7 +1454,6 @@ PRODUCT_PACKAGES += \
     android.hardware.gnss-service.mediatek \
     android.hardware.graphics.composer@3.4-service \
     android.hardware.identity-service.beanpod \
-    android.hardware.lights-service.mediatek \
     android.hardware.media.c2-mediatek-64b \
     android.hardware.nfc-service-tms \
     android.hardware.secure_element@1.2-service-mediatek \
