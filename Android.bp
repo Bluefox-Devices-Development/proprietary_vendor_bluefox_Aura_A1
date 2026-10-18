@@ -24280,24 +24280,6 @@ prebuilt_etc_xml {
 }
 
 prebuilt_etc_xml {
-    name: "android.hardware.usb-aidl-service.mediatek.xml",
-    owner: "bluefox",
-    src: "proprietary/vendor/etc/vintf/manifest/android.hardware.usb-aidl-service.mediatek.xml",
-    filename_from_src: true,
-    sub_dir: "vintf/manifest",
-    soc_specific: true,
-}
-
-prebuilt_etc_xml {
-    name: "android.hardware.usb.gadget-aidl-service.mediatek.xml",
-    owner: "bluefox",
-    src: "proprietary/vendor/etc/vintf/manifest/android.hardware.usb.gadget-aidl-service.mediatek.xml",
-    filename_from_src: true,
-    sub_dir: "vintf/manifest",
-    soc_specific: true,
-}
-
-prebuilt_etc_xml {
     name: "android.hardware.wifi-service.aura.xml",
     owner: "bluefox",
     src: "proprietary/vendor/etc/vintf/manifest/android.hardware.wifi-service.aura.xml",
@@ -25495,72 +25477,6 @@ cc_prebuilt_binary {
                 "libhardware",
                 "libbase",
                 "libc++",
-                "libm",
-                "libdl",
-            ],
-        },
-    },
-    compile_multilib: "64",
-    strip: {
-        none: true,
-    },
-    prefer: true,
-    relative_install_path: "hw",
-    soc_specific: true,
-}
-
-cc_prebuilt_binary {
-    name: "android.hardware.usb-aidl-service.mediatek",
-    owner: "bluefox",
-    target: {
-        android_arm64: {
-            srcs: [
-                "proprietary/vendor/bin/hw/android.hardware.usb-aidl-service.mediatek",
-            ],
-            shared_libs: [
-                "android.hardware.usb-V3-ndk",
-                "libbase",
-                "libbinder_ndk",
-                "libcutils",
-                "liblog",
-                "libutils",
-                "libc++",
-                "libc",
-                "libm",
-                "libdl",
-            ],
-        },
-    },
-    compile_multilib: "64",
-    strip: {
-        none: true,
-    },
-    prefer: true,
-    relative_install_path: "hw",
-    soc_specific: true,
-}
-
-cc_prebuilt_binary {
-    name: "android.hardware.usb.gadget-aidl-service.mediatek",
-    owner: "bluefox",
-    target: {
-        android_arm64: {
-            srcs: [
-                "proprietary/vendor/bin/hw/android.hardware.usb.gadget-aidl-service.mediatek",
-            ],
-            shared_libs: [
-                "libbase",
-                "libbinder",
-                "libhidlbase",
-                "liblog",
-                "libutils",
-                "libhardware",
-                "android.hardware.usb.gadget-V1-ndk",
-                "android.frameworks.stats-V1-ndk",
-                "libcutils",
-                "libbinder_ndk",
-                "libc++",
-                "libc",
                 "libm",
                 "libdl",
             ],

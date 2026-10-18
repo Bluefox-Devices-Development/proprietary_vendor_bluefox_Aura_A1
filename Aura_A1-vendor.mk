@@ -218,8 +218,6 @@ PRODUCT_COPY_FILES += \
     vendor/bluefox/Aura_A1/proprietary/vendor/etc/init/android.hardware.media.c2-mediatek-64b.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/android.hardware.media.c2-mediatek-64b.rc \
     vendor/bluefox/Aura_A1/proprietary/vendor/etc/init/android.hardware.secure_element@1.2-service-mediatek.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/android.hardware.secure_element@1.2-service-mediatek.rc \
     vendor/bluefox/Aura_A1/proprietary/vendor/etc/init/android.hardware.security.keymint-service.beanpod.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/android.hardware.security.keymint-service.beanpod.rc \
-    vendor/bluefox/Aura_A1/proprietary/vendor/etc/init/android.hardware.usb-aidl-service.mediatek.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/android.hardware.usb-aidl-service.mediatek.rc \
-    vendor/bluefox/Aura_A1/proprietary/vendor/etc/init/android.hardware.usb.gadget-aidl-service.mediatek.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/android.hardware.usb.gadget-aidl-service.mediatek.rc \
     vendor/bluefox/Aura_A1/proprietary/vendor/etc/init/android.hardware.wifi-service-lazy-stock.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/android.hardware.wifi-service-lazy-stock.rc \
     vendor/bluefox/Aura_A1/proprietary/vendor/etc/init/android.hardware.wifi.supplicant-service-stock.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/android.hardware.wifi.supplicant-service-stock.rc \
     vendor/bluefox/Aura_A1/proprietary/vendor/etc/init/atcid.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/atcid.rc \
@@ -1410,8 +1408,6 @@ PRODUCT_PACKAGES += \
     android.hardware.security.keymint-service.beanpod.xml \
     android.hardware.security.secureclock-service.beanpod.xml \
     android.hardware.security.sharedsecret-service.beanpod.xml \
-    android.hardware.usb-aidl-service.mediatek.xml \
-    android.hardware.usb.gadget-aidl-service.mediatek.xml \
     android.hardware.wifi-service.aura.xml \
     android.hardware.wifi.hostapd.aura.xml \
     android.hardware.wifi.supplicant.aura.xml \
@@ -1467,8 +1463,6 @@ PRODUCT_PACKAGES += \
     android.hardware.secure_element@1.2-service-mediatek \
     android.hardware.security.keymint@4.0-service.beanpod \
     android.hardware.thermal-service.mediatek \
-    android.hardware.usb-aidl-service.mediatek \
-    android.hardware.usb.gadget-aidl-service.mediatek \
     android.hardware.vibrator-service.mediatek \
     android.hardware.wifi-service-lazy-stock \
     hostapd-stock \
