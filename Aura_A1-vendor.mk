@@ -1323,8 +1323,7 @@ PRODUCT_PACKAGES += \
     vendor.mediatek.hardware.mmlpq-V3-ndk \
     vendor.mediatek.hardware.mmlpq-V5-ndk \
     vendor.mediatek.hardware.mms-V1-ndk \
-    vendor.mediatek.hardware.mtkpower-V1-ndk \
-    vendor.mediatek.hardware.mtkpower-V2-ndk \
+    vendor.mediatek.hardware.mtkpower-V2-ndk-vendorcompat \
     vendor.mediatek.hardware.mtkpower-V3-ndk \
     vendor.mediatek.hardware.mtkpower_applist-V3-ndk \
     vendor.mediatek.hardware.mtkradioex.assist-V2-ndk \

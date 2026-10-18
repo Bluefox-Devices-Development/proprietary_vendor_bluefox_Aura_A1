@@ -354,7 +354,7 @@ cc_prebuilt_library_shared {
                 "vendor.mediatek.hardware.mtkpower@1.0",
                 "vendor.mediatek.hardware.mtkpower@1.1",
                 "vendor.mediatek.hardware.mtkpower@1.2",
-                "vendor.mediatek.hardware.mtkpower-V2-ndk",
+                "vendor.mediatek.hardware.mtkpower-V2-ndk-vendorcompat",
                 "libc++",
                 "libc",
                 "libm",
@@ -6757,7 +6757,7 @@ cc_prebuilt_library_shared {
                 "libbinder_ndk",
                 "libcutils",
                 "libc",
-                "vendor.mediatek.hardware.mtkpower-V2-ndk",
+                "vendor.mediatek.hardware.mtkpower-V2-ndk-vendorcompat",
                 "vendor.mediatek.hardware.mtkpower@1.0",
                 "vendor.mediatek.hardware.mtkpower@1.1",
                 "vendor.mediatek.hardware.mtkpower@1.2",
@@ -22188,32 +22188,8 @@ cc_prebuilt_library_shared {
 }
 
 cc_prebuilt_library_shared {
-    name: "vendor.mediatek.hardware.mtkpower-V1-ndk",
-    owner: "bluefox",
-    strip: {
-        none: true,
-    },
-    target: {
-        android_arm64: {
-            srcs: [
-                "proprietary/vendor/lib64/vendor.mediatek.hardware.mtkpower-V1-ndk.so",
-            ],
-            shared_libs: [
-                "libbinder_ndk",
-                "libc++",
-                "libc",
-                "libm",
-                "libdl",
-            ],
-        },
-    },
-    compile_multilib: "64",
-    prefer: true,
-    soc_specific: true,
-}
-
-cc_prebuilt_library_shared {
-    name: "vendor.mediatek.hardware.mtkpower-V2-ndk",
+    name: "vendor.mediatek.hardware.mtkpower-V2-ndk-vendorcompat",
+    stem: "vendor.mediatek.hardware.mtkpower-V2-ndk",
     owner: "bluefox",
     strip: {
         none: true,
