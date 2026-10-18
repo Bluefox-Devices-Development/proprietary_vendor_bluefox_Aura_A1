@@ -1164,7 +1164,7 @@ PRODUCT_PACKAGES += \
     liblpcnr \
     libmmagent \
     libmml \
-    libmnl \
+    libmnl_mtk \
     libmsnr \
     libmtk_drvb \
     libmtk_mali_user \
@@ -1721,7 +1721,7 @@ PRODUCT_PACKAGES += \
     vendor_lib64_liblpcnr_so \
     vendor_lib64_libmmagent_so \
     vendor_lib64_libmml_so \
-    vendor_lib64_libmnl_so \
+    vendor_lib64_libmnl_mtk_so \
     vendor_lib64_libmsnr_so \
     vendor_lib64_libmtk_drvb_so \
     vendor_lib64_libmtk_mali_user_so \

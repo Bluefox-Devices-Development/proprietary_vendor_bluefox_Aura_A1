@@ -16805,7 +16805,7 @@ cc_prebuilt_library_shared {
 }
 
 cc_prebuilt_library_shared {
-    name: "libmnl",
+    name: "libmnl_mtk",
     owner: "bluefox",
     strip: {
         none: true,
@@ -16813,7 +16813,7 @@ cc_prebuilt_library_shared {
     target: {
         android_arm64: {
             srcs: [
-                "proprietary/vendor/lib64/mt6789/libmnl.so",
+                "proprietary/vendor/lib64/mt6789/libmnl_mtk.so",
             ],
             shared_libs: [
                 "libc++",
@@ -25817,7 +25817,7 @@ cc_prebuilt_binary {
                 "proprietary/vendor/bin/mnld",
             ],
             shared_libs: [
-                "libmnl",
+                "libmnl_mtk",
                 "libcurl",
                 "libcutils",
                 "libnvram",
@@ -28268,10 +28268,10 @@ install_symlink {
 }
 
 install_symlink {
-    name: "vendor_lib64_libmnl_so",
+    name: "vendor_lib64_libmnl_mtk_so",
     soc_specific: true,
-    installed_location: "lib64/libmnl.so",
-    symlink_target: "/vendor/lib64/mt6789/libmnl.so",
+    installed_location: "lib64/libmnl_mtk.so",
+    symlink_target: "/vendor/lib64/mt6789/libmnl_mtk.so",
 }
 
 install_symlink {
