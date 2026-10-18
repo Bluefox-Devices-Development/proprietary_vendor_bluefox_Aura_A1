@@ -634,7 +634,6 @@ PRODUCT_PACKAGES += \
     audio.primary.mediatek \
     audio.r_submix.default \
     audio.r_submix.mediatek \
-    audio.usb.default \
     audio_policy.stub \
     consumerir.common \
     gps.default \

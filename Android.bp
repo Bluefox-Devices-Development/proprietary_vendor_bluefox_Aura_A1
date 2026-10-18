@@ -960,36 +960,6 @@ cc_prebuilt_library_shared {
 }
 
 cc_prebuilt_library_shared {
-    name: "audio.usb.default",
-    owner: "bluefox",
-    strip: {
-        none: true,
-    },
-    target: {
-        android_arm64: {
-            srcs: [
-                "proprietary/vendor/lib64/hw/audio.usb.default.so",
-            ],
-            shared_libs: [
-                "liblog",
-                "libcutils",
-                "libaudioutils",
-                "libtinyalsa",
-                "libalsautils",
-                "libc++",
-                "libc",
-                "libm",
-                "libdl",
-            ],
-        },
-    },
-    compile_multilib: "64",
-    relative_install_path: "hw",
-    prefer: true,
-    soc_specific: true,
-}
-
-cc_prebuilt_library_shared {
     name: "audio_policy.stub",
     owner: "bluefox",
     strip: {
